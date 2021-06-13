@@ -48,11 +48,12 @@ width: 100vw;
 cursor:url(assets/img/clown.png), auto;
 }
 
-#mobile-text {
-padding: var(--margin);}
 
 p, a {font-size: 5vw;}
 
 a {color: black}
 
 p2 {font-size: 7vw}
+
+
+body, header {background-color: #b1d8e5;}
