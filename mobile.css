@@ -1,0 +1,58 @@
+:root {
+/* LAYERS Z-INDEX */
+  --bottom-layer: 0;
+
+/* MARGINS */
+  --margin: 4vw;
+  --bottom-margin: 3vw;
+
+  --closed-tab-width: 4vw;
+  --open-tab-width: 80vw;
+}
+
+
+/* FONT */
+@font-face {
+    font-family: 'Suisse Intl';
+    src: url('assets/font/SuisseIntl-Regular.otf');
+    src: local('Suisse Intl Regular');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#text, #btn-container, #section_right {display: none}
+
+main {width: 100vw; }
+
+
+#mobile-text-container {padding: var(--margin); margin-top: 10vh;}
+
+header {
+top: 0;
+padding: var(--margin);
+border-bottom: solid;
+height: 8vh;
+position: fixed;
+width: 100vw;
+}
+
+#name {float: left; text-transform: uppercase;}
+
+#contacts {
+  float: right;}
+
+.contact_link {
+  padding-left: 1vw;}
+
+.contact_link, #name {
+cursor:url(assets/img/clown.png), auto;
+}
+
+#mobile-text {
+padding: var(--margin);}
+
+p, a {font-size: 5vw;}
+
+a {color: black}
+
+p2 {font-size: 7vw}
