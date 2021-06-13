@@ -57,3 +57,5 @@ p2 {font-size: 7vw}
 
 
 body, header {background-color: #b1d8e5;}
+
+a:hover, a:focus {font-weight: bolder; color: black}
