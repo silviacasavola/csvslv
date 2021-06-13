@@ -165,7 +165,7 @@ width: 50vw;
 .contact_link {
   padding-left: 1vw;}
 
-.contact_link, #name {
+#lk, #name {
 cursor:url(assets/img/clown.png), auto;
 }
 
@@ -178,9 +178,9 @@ grid-template-columns: 1fr 1fr;
 grid-gap: 0;
 }
 
-#btn-container {display: flex;}
+#btn-container {display: flex; }
 
-#text, button{
+#text, #btn-container{
 margin-top: 4vw;
 padding-left: var(--margin);
 padding-right: var(--margin);
@@ -190,6 +190,23 @@ padding-top: 10px;
 
 button {border: none; background: none; outline: none; cursor: pointer;
 font-style: italic; text-decoration: underline; color: blue;}
+
+#arrow {
+  padding-left: 20px;
+  text-decoration: none;
+  animation: arrow-move 1s infinite;
+  /* animation-direction: alternate-reverse; */
+  }
+
+  @keyframes arrow-move {
+    0% {
+          margin-left: 0px;
+    }
+    50% {
+          margin-left: 10px;
+         }
+    100% {margin-left: 0px}
+  }
 
 /* button {border: solid;
   padding: var(--margin);
