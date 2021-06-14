@@ -30,7 +30,7 @@ main {width: 100vw; }
 header {
 top: 0;
 padding: var(--margin);
-border-bottom: solid 0.8px;
+border-bottom: solid 1px;
 /* height: 8vh; */
 height: auto;
 position: fixed;
