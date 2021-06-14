@@ -30,13 +30,16 @@ main {width: 100vw; }
 header {
 top: 0;
 padding: var(--margin);
-border-bottom: solid;
-height: 8vh;
+border-bottom: solid 0.8px;
+/* height: 8vh; */
+height: auto;
 position: fixed;
 width: 100vw;
 }
 
-#name {float: left; text-transform: uppercase;}
+#name {float: left; text-transform: uppercase;
+    /* padding: 0; */
+  margin: 0;}
 
 #contacts {
   float: right;}

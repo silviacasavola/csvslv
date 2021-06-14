@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+
+<!-- Che figata! Stai ispezionando il mio codice? -->
+
 <html lang="en">
 
   <head>
@@ -125,11 +127,12 @@
     </div>
 
 <!-- 1. PROJECT CONTENT -->
-<div class="project_content">
+<div class="project_content"  onscroll="hideArrow()">
 
   <div class="img_container"> <img class="project-img" src="assets/img/tod.jpg"> </div>
   <div class="img_container"> <img class="project-img" src="assets/img/tod2.jpg"> </div>
-  <div class="img_container"> <img class="project-img" src="assets/img/tod3.jpg"> </div>
+  <div class="img_container"> <img class="project-img" src="assets/img/tod3.jpg"> <p2 class="prjarrow" id="prjarrow1">&darr;</p2>  </div>
+
 
 <div class="project-text">
   <p> "Tod" is a speculative design project
@@ -170,7 +173,7 @@ a tutto l'universo di "Tod", e la realizzazione del prototipo.</p>
 
 
 <!-- 2ND PROJECT -->
-      <div class="choice unset" id="prj2">
+      <div class="choice unset" id="prj2" >
 
 <!-- 2. PROJECT INDEX -->
     <div class="project-index-container">
@@ -182,7 +185,7 @@ a tutto l'universo di "Tod", e la realizzazione del prototipo.</p>
     </div>
 
 <!-- 2. PROJECT CONTENT -->
-<div class="project_content">
+<div class="project_content" onscroll="hideArrow()">
           <p class="project-text">Some quick example text to build on the project title and make up the bulk of the project's content.</p>
 </div>
     </div>
@@ -203,7 +206,7 @@ a tutto l'universo di "Tod", e la realizzazione del prototipo.</p>
     </div>
 
 <!-- 3. PROJECT CONTENT -->
-<div class="project_content">
+<div class="project_content"  onscroll="hideArrow()">
           <p class="project-text">Some quick example text to build on the project title and make up the bulk of the project's content.</p>
 </div>
       </div>
@@ -212,7 +215,7 @@ a tutto l'universo di "Tod", e la realizzazione del prototipo.</p>
 
 
 <!-- 4TH PROJECT -->
-<div class="choice unset" id="prj4">
+<div class="choice unset" id="prj4" onscroll="hideArrow()">
 
 <!-- 4. PROJECT INDEX -->
 <div class="project-index-container">
@@ -434,6 +437,17 @@ $(".choice").on("click", function(){
     $(this).addClass("expand");
 }
 )
+
+
+// SCROLL ARROW
+function hideArrow() {
+  let arrow = true;
+  if (arrow === true) {
+    $(".prjarrow").css("display", "none");
+    arrow = false;
+  }
+}
+
 </script>
 
 <!-- BOOTSTRAP bundle with popper -->

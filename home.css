@@ -194,11 +194,10 @@ font-style: italic; text-decoration: underline; color: blue;}
 #arrow {
   padding-left: 20px;
   text-decoration: none;
-  animation: arrow-move 1s infinite;
-  /* animation-direction: alternate-reverse; */
+  animation: arrow-click 1s infinite;
   }
 
-  @keyframes arrow-move {
+  @keyframes arrow-click {
     0% {
           margin-left: 0px;
     }
@@ -333,6 +332,28 @@ overflow: hidden;
 
  /* PROJECT CONTENT */
 
+ .prjarrow {
+   position: absolute;
+z-index: 100;
+ right: var(--margin);
+ top: 20%;
+
+ animation: arrow-scroll 2s infinite;
+ color: white;
+ }
+
+ @keyframes arrow-scroll {
+   0% {
+   top: 10%;
+   }
+   /* 50% {
+         margin-left: 10px;
+        } */
+   100% {top: 50%;}
+ }
+
+
+
 .project-text {
   /* padding-right: var(--margin); */
   margin-top: var(--margin);
@@ -349,13 +370,10 @@ overflow: hidden;
 }
 
 .img_container {
-  /* display: block; */
-  /* position: relative; */
   width: 100%;
   min-height: 40vh;
   max-height: 40vh;
-  /* margin-bottom: var(--margin); */
-  /* min-width: 27vw; */
+  position: relative;
 }
 
 /* .project-text-container {
