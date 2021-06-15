@@ -339,11 +339,12 @@ overflow: hidden;
  /* PROJECT CONTENT */
 
  .prjarrow {
-   position: absolute;
-z-index: 100;
- right: var(--margin);
- top: 20%;
-
+position: absolute;
+z-index: 1000;
+ /* right: var(--margin); */
+ /* top: 20%; */
+top: 0;
+left: 0;
  animation: arrow-scroll 2s infinite;
  color: var(--background);
  -webkit-text-stroke-width: 0.5px;
