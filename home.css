@@ -1,13 +1,13 @@
 :root {
-/* LAYERS Z-INDEX */
+/* Z-INDEX LAYERS */
   --bottom-layer: 0;
+  --top-layer: 10;
 
 /* MARGINS */
   --margin: 1vw;
-  --bottom-margin: 3vw;
 
   --closed-tab-width: 4vw;
-  --open-tab-width: 80vw;
+  --open-tab-width: 80vw; /*inesatto*/
 
   --background: #b1d8e5;
   /* --background: #c9c8e3; */
@@ -19,31 +19,20 @@
 /* FONT */
 @font-face {
     font-family: "Suisse Intl";
-    src: url("assets/font/SuisseIntl-Regular.otf");
-    src: url("assets/font/SuisseIntl-Regular.otf") format("embedded-opentype");
-    src: url("assets/font/SuisseIntl-Regular.otf") format("truetype");
-    src: url("assets/font/SuisseIntl-Regular.otf") format("woff");
-    src: url("assets/font/SuisseIntl-Regular.otf") format("woff2");
-    src: url("assets/font/SuisseIntl-Regular.otf") format("svg");
+    src: url("./assets/font/SuisseIntl-Regular.otf");
+    src: url("./assets/font/SuisseIntl-Regular.otf") format("embedded-opentype");
+    src: url("./assets/font/SuisseIntl-Regular.otf") format("truetype");
+    src: url("./assets/font/SuisseIntl-Regular.otf") format("woff");
+    src: url("./assets/font/SuisseIntl-Regular.otf") format("woff2");
+    src: url("./assets/font/SuisseIntl-Regular.otf") format("svg");
     /* src: url("assets/font/SuisseIntl-Regular.woff2") format("woff"); */
     src: local("Suisse Intl");
     font-weight: normal;
     font-style: normal;
-}
+    font-display: block;
+  }
 
-@font-face {
-    font-family: "Suisse Intl";
-    src: url("assets/font/SuisseIntl-SemiBold.otf");
-    src: url("assets/font/SuisseIntl-SemiBold.otf") format("embedded-opentype");
-    src: url("assets/font/SuisseIntl-SemiBold.otf") format("truetype");
-    src: url("assets/font/SuisseIntl-SemiBold.otf") format("woff");
-    src: url("assets/font/SuisseIntl-SemiBold.otf") format("woff2");
-    src: url("assets/font/SuisseIntl-SemiBold.otf") format("svg");
-    /* src: url("assets/font/SuisseIntl-SemiBold.woff2") format("woff"); */
-    src: local("Suisse Intl");
-    font-weight: bolder;
-    font-style: normal;
-}
+
 
 
 /* GLOBAL */
@@ -75,14 +64,14 @@ section::-webkit-scrollbar {
 
 
 
-/* LAYERS Z-INDEX */
-header, main, footer {z-index: var(--bottom-layer)}
+/* Z-INDEX LAYERS */
+header, main {z-index: var(--bottom-layer)}
+.prjrrow {z-index: var(--top-layer)}
 
 
 /* TEXT STYLE*/
 
 a {color: black;
-  font-style: italic;
 }
 
 a:hover {
@@ -90,83 +79,11 @@ color: #283de5;}
 
 p {font-size: 18px;}
 p1 {font-size: 14px}
-p2, button {font-size: 32px;
-/* font-weight:500; */
-/* text-transform: uppercase; */
-}
+p2, button {font-size: 32px;}
 
-p2 {
+.contact_link, .project-link {font-style: italic;}
 
-/* NON FUNZIONA */
-animation:
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
-}
 
-p2 + p2 { margin-top: 12px; }
-
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
-}
-
-#p4 {
-  animation: fadein 1s;
-}
-
-@keyframes fadein {
-  from {
-        -webkit-filter: blur(10px);
-  }
-    to {
-        -webkit-filter: blur(0px);
-       }
-}
-
-#p19b {
-  background: linear-gradient(to right, #283de5 0%, #283de5 50%, #000000 100%);
-
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-
-    -webkit-animation: p19coloranimation 2s ease-in-out;
-    -moz-animation: p19coloranimation 2s ease-in-out;
-    animation: p19coloranimation 2s ease-in-out;
-    -webkit-transition: p19coloranimation 2s ease-in-out;
-  -moz-transition: p19coloranimation 2s ease-in-out;
-  -ms-transition: p19coloranimation 2s ease-in-out;
-  -o-transition: p19coloranimation 2s ease-in-out;
-  transition: p19coloranimation 2s ease-in-out;
-}
-
-@-webkit-keyframes p19coloranimation {
-    0%{background: linear-gradient(to right, #000000 0%, #000000 50%, #000000 100%);
-      	-webkit-background-clip: text;
-      	-webkit-text-fill-color: transparent;
-      }
-
-    100%{background: linear-gradient(to right, #283de5 0%, #283de5 50%, #000000 100%);
-
-      	-webkit-background-clip: text;
-      	-webkit-text-fill-color: transparent;
-      }
-}
-
-/* @-moz-keyframes p19coloranimation {
-    0%{background: linear-gradient(to right, #000000 0%, #000000 100%}
-    100%{background: linear-gradient(to right, #30CFD0 0%, #330867 100%);}
-}
-@keyframes p19coloranimation {
-    0%{background: linear-gradient(to right, #000000 0%, #000000 100%}
-    100%{background: linear-gradient(to right, #30CFD0 0%, #330867 100%);}
-} */
 
 
 /* SECTION LEFT */
@@ -242,6 +159,70 @@ background: none;
 
 .hidden {display: none}
 
+
+p2 {
+
+/* NON FUNZIONA */
+animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+p2 + p2 { margin-top: 12px; }
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+#p4 {
+  animation: fadein 1s;
+}
+
+@keyframes fadein {
+  from {
+        -webkit-filter: blur(10px);
+  }
+    to {
+        -webkit-filter: blur(0px);
+       }
+}
+
+#p19b {
+  background: linear-gradient(to right, #283de5 0%, #283de5 50%, #000000 100%);
+
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+    -webkit-animation: p19coloranimation 2s ease-in-out;
+    -moz-animation: p19coloranimation 2s ease-in-out;
+    animation: p19coloranimation 2s ease-in-out;
+    -webkit-transition: p19coloranimation 2s ease-in-out;
+  -moz-transition: p19coloranimation 2s ease-in-out;
+  -ms-transition: p19coloranimation 2s ease-in-out;
+  -o-transition: p19coloranimation 2s ease-in-out;
+  transition: p19coloranimation 2s ease-in-out;
+}
+
+@-webkit-keyframes p19coloranimation {
+    0%{background: linear-gradient(to right, #000000 0%, #000000 50%, #000000 100%);
+      	-webkit-background-clip: text;
+      	-webkit-text-fill-color: transparent;
+      }
+
+    100%{background: linear-gradient(to right, #283de5 0%, #283de5 50%, #000000 100%);
+
+      	-webkit-background-clip: text;
+      	-webkit-text-fill-color: transparent;
+      }
+}
 
 
 
@@ -408,14 +389,14 @@ left: 0;
   max-height: 40vh;
 }
 
+.pasta1 {
+  min-height: 42vw;
+  max-height: 42vw;
+}
+
 .pasta2 {
   min-height: 30vh;
   max-height: 30vh;
-}
-
-.pasta1 {
-  min-height: 80vh;
-  max-height: 80vh;
 }
 
 .video_container {
