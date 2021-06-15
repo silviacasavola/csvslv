@@ -18,10 +18,10 @@
 
 /* FONT */
 @font-face {
-    font-family: "Suisse Intl';
-    src: url('assets/font/SuisseIntl-Regular.otf');
-    src: url('assets/font/SuisseIntl-Regular.woff2');
-    src: local('Suisse Intl');
+    font-family: "Suisse Intl";
+    src: url("assets/font/SuisseIntl-Regular.otf") format("svg");
+    src: url("assets/font/SuisseIntl-Regular.woff2") format("svg");
+    src: local("Suisse Intl");
     font-weight: normal;
     font-style: normal;
 }

@@ -12,10 +12,12 @@
 
 
 /* FONT */
+/* FONT */
 @font-face {
-    font-family: 'Suisse Intl';
-    src: url('assets/font/SuisseIntl-Regular.otf');
-    src: local('Suisse Intl Regular');
+    font-family: "Suisse Intl";
+    src: url("assets/font/SuisseIntl-Regular.otf");
+    src: url("assets/font/SuisseIntl-Regular.woff2");
+    src: local("Suisse Intl");
     font-weight: normal;
     font-style: normal;
 }
