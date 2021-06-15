@@ -19,11 +19,28 @@
 /* FONT */
 @font-face {
     font-family: "Suisse Intl";
+    src: url("assets/font/SuisseIntl-Regular.otf");
+    src: url("assets/font/SuisseIntl-Regular.otf") format("embedded-opentype");
+    src: url("assets/font/SuisseIntl-Regular.otf") format("truetype");
+    src: url("assets/font/SuisseIntl-Regular.otf") format("woff");
+    src: url("assets/font/SuisseIntl-Regular.otf") format("woff2");
     src: url("assets/font/SuisseIntl-Regular.otf") format("svg");
-    src: url("assets/font/SuisseIntl-Regular.woff2") format("svg");
+    /* src: url("assets/font/SuisseIntl-Regular.woff2") format("woff"); */
     src: local("Suisse Intl");
     font-weight: normal;
     font-style: normal;
+}
+
+@font-face {
+font-family: 'adieu';
+src: url('../fonts/adieu/Adieu-Black.otf');
+src: url('../fonts/adieu/Adieu-Regular.otf') format('embedded-opentype'),
+url('../fonts/adieu/Adieu-Regular.otf') format('truetype'),
+url('../fonts/adieu/Adieu-Regular.otf') format('woff'),
+url('../fonts/adieu/Adieu-Regular.otf') format('svg');
+font-weight: normal;
+font-style: normal;
+font-display: block;
 }
 
 
