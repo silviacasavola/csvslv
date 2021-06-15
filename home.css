@@ -32,15 +32,17 @@
 }
 
 @font-face {
-font-family: 'adieu';
-src: url('../fonts/adieu/Adieu-Black.otf');
-src: url('../fonts/adieu/Adieu-Regular.otf') format('embedded-opentype'),
-url('../fonts/adieu/Adieu-Regular.otf') format('truetype'),
-url('../fonts/adieu/Adieu-Regular.otf') format('woff'),
-url('../fonts/adieu/Adieu-Regular.otf') format('svg');
-font-weight: normal;
-font-style: normal;
-font-display: block;
+    font-family: "Suisse Intl";
+    src: url("assets/font/SuisseIntl-SemiBold.otf");
+    src: url("assets/font/SuisseIntl-SemiBold.otf") format("embedded-opentype");
+    src: url("assets/font/SuisseIntl-SemiBold.otf") format("truetype");
+    src: url("assets/font/SuisseIntl-SemiBold.otf") format("woff");
+    src: url("assets/font/SuisseIntl-SemiBold.otf") format("woff2");
+    src: url("assets/font/SuisseIntl-SemiBold.otf") format("svg");
+    /* src: url("assets/font/SuisseIntl-SemiBold.woff2") format("woff"); */
+    src: local("Suisse Intl");
+    font-weight: bolder;
+    font-style: normal;
 }
 
 
