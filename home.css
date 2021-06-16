@@ -58,6 +58,8 @@ section {
 overflow-x: hidden;
 height: 100vh;
 overflow: auto;
+
+scrollbar-width: none;
 }
 
 section::-webkit-scrollbar {
@@ -362,6 +364,8 @@ left: 0;
 .project_content {
   overflow: auto;
   padding-bottom: var(--margin);
+
+  scrollbar-width: none;
 }
 
 .project_content::-webkit-scrollbar {
