@@ -341,11 +341,11 @@ z-index: 1000;
  /* right: var(--margin); */
  /* top: 20%; */
 top: 0;
-left: 0;
+right: var(--margin);
  animation: arrow-scroll 2s infinite;
  color: var(--background);
- -webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: black;
+ /* -webkit-text-stroke-width: 0.5px; */
+  /* -webkit-text-stroke-color: black; */
  }
 
  @keyframes arrow-scroll {
