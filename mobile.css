@@ -112,7 +112,8 @@ a {color: black;}
 max-width: 88vw;
 margin-top: 15vw;}
 
-
+.paragraph {line-height: 1.4;
+margin-top: 5px;}
 
 /* SECTION RIGHT */
 #section_right_container {display: none}
