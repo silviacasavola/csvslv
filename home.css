@@ -504,7 +504,8 @@ body, header {background-color: var(--background)}
 
 
 
-#mobile-text-container {display: none}
+/* #mobile-text-container {display: none} */
+#contacts_mobile {display: none}
 
 
 
