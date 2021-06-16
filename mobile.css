@@ -134,7 +134,6 @@ margin-top: 5px;}
 
 
 /* SECTION LEFT */
-#me {display: flex; }
 
 #text, #me{
 margin-top: 3vw;
@@ -144,9 +143,19 @@ padding-bottom: var(--margin);
 padding-top: 10px;
 }
 
-button {border: none; background: none; outline: none; cursor: pointer;
-font-style: italic; text-decoration: underline; color: blue; padding: none;
-transform:translate(-4px, 0);}
+#me {display: flex;
+max-width: 88vw;}
+
+button {border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+font-style: italic;
+text-decoration:
+underline; color: blue;
+padding: none;
+transform:translate(-4px, 0);
+}
 
 #arrow {
   padding-left: 20px;
