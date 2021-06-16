@@ -137,7 +137,7 @@ margin-top: 4vw;
 padding-left: var(--margin);
 padding-right: var(--margin);
 padding-bottom: var(--margin);
-padding-top: 10px;
+padding-top: 12px;
 }
 
 button {border: none; background: none; outline: none; cursor: pointer;
