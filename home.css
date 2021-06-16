@@ -80,13 +80,13 @@ a {color: black;}
 a:hover {color: #283de5;}
 
 /* NOME HEADER, INDICE PROGETTI E TESTO PROGETTO */
-#name, .project-index, .project-text {font-size: 20px;}
+#name, .project-index, .project-text {font-size: 18px;}
 
 /* CONTATTI HEADER */
-.contact_link {font-size: 18px;, line-height: -1.1;}
+.contact_link {font-size: 16px;, line-height: -1.1;}
 
 /* PARAGRAFI SX */
-.paragraph, #p1, button, .arrow, .prjarrow {font-size: 30px;}
+.paragraph, #p1, button, .arrow, .prjarrow {font-size: 32px;}
 
 /* CREDITI PROGETTI */
 .project-credits, .project-link {font-size: 14px;}
