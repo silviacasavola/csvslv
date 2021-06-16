@@ -47,6 +47,7 @@ body {
   overflow-x: hidden;
   font-family: "Suisse Intl";
   box-sizing: content-box;
+  scrollbar-width: none;
 }
 
 body::-webkit-scrollbar {
