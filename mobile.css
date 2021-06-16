@@ -110,7 +110,9 @@ a {color: black;}
 /* SECTION LEFT */
 #section_left {
 max-width: 88vw;
-margin-top: 15vw;}
+margin-top: 15vw;
+overflow: hidden;
+}
 
 .paragraph {line-height: 1.4;
 margin-top: 5px;}
