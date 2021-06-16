@@ -141,7 +141,8 @@ padding-top: 10px;
 }
 
 button {border: none; background: none; outline: none; cursor: pointer;
-font-style: italic; text-decoration: underline; color: blue;}
+font-style: italic; text-decoration: underline; color: blue; padding: none;
+transform:translate(-4px, 0);}
 
 #arrow {
   padding-left: 20px;
