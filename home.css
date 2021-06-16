@@ -19,14 +19,15 @@
 /* FONT */
 @font-face {
     font-family: "Suisse Intl";
-    src: url("./assets/font/SuisseIntl-Regular.otf");
-    src: url("./assets/font/SuisseIntl-Regular.otf") format("embedded-opentype");
-    src: url("./assets/font/SuisseIntl-Regular.otf") format("truetype");
-    src: url("./assets/font/SuisseIntl-Regular.otf") format("woff");
-    src: url("./assets/font/SuisseIntl-Regular.otf") format("woff2");
-    src: url("./assets/font/SuisseIntl-Regular.otf") format("svg");
-    /* src: url("assets/font/SuisseIntl-Regular.woff2") format("woff"); */
-    src: local("Suisse Intl");
+    src: url("./assets/font/SuisseIntl-Regular.otf"),
+   url("./assets/font/SuisseIntl-Regular.otf") format("embedded-opentype"),
+   url("./assets/font/SuisseIntl-Regular.otf") format("truetype"),
+   url("./assets/font/SuisseIntl-Regular.otf") format("woff"),
+   url("./assets/font/SuisseIntl-Regular.otf") format("woff2"),
+   url("./assets/font/SuisseIntl-Regular.otf") format("svg"),
+   url("assets/font/SuisseIntl-Regular.woff2") format("woff2"),
+   url("assets/font/SuisseIntl-Regular.woff"),
+   local("Suisse Intl");
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -66,23 +67,29 @@ section::-webkit-scrollbar {
 
 /* Z-INDEX LAYERS */
 header, main {z-index: var(--bottom-layer)}
-.prjrrow {z-index: var(--top-layer)}
+.prjarrow {z-index: var(--top-layer)}
 
 
 /* TEXT STYLE*/
 
-a {color: black;
-}
+a {color: black;}
 
-a:hover {
-color: #283de5;}
+a:hover {color: #283de5;}
 
-p {font-size: 18px;}
-p1 {font-size: 14px}
-p2, button {font-size: 32px;}
+/* NOME HEADER, INDICE PROGETTI E TESTO PROGETTO */
+#name, .project-index, .project-text {font-size: 24px;}
 
+/* CONTATTI HEADER */
+.contact_link {font-size: 22px;, line-height: -1.1;}
+
+/* PARAGRAFI SX */
+.paragraph, button, .arrow, .prjarrow {font-size: 43px;}
+
+/* CREDITI PROGETTI */
+.project-credits, .project-link {font-size: 18px;}
+
+/* LINK HEADER E PRJ */
 .contact_link, .project-link {font-style: italic;}
-
 
 
 
@@ -133,7 +140,7 @@ padding-top: 10px;
 button {border: none; background: none; outline: none; cursor: pointer;
 font-style: italic; text-decoration: underline; color: blue;}
 
-#arrow {
+#clickarrow {
   padding-left: 20px;
   text-decoration: none;
   animation: arrow-click 1s infinite;
@@ -160,27 +167,7 @@ background: none;
 .hidden {display: none}
 
 
-p2 {
 
-/* NON FUNZIONA */
-animation:
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
-}
-
-p2 + p2 { margin-top: 12px; }
-
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
-}
 
 #p4 {
   animation: fadein 1s;
@@ -301,7 +288,8 @@ float: left;}
   position: relative;
 
   /* height: var(--closed-tab-width); */
-  width: 80vh;
+  width: 90vh;
+  padding-right: var(--margin);
   /* background-color: yellow; */
   display: table;
   grid-template-columns: 1fr 1fr 1fr;
