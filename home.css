@@ -49,7 +49,7 @@ body {
   /* font-family:"Times new Roman"; */
   box-sizing: content-box;
   scrollbar-width: none;
-  font-size: 1.06vw;
+  font-size: 1vw;
 }
 
 body::-webkit-scrollbar {
