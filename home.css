@@ -114,6 +114,7 @@ border-bottom: solid 2px black;
 height: var(--header-height);
 position: fixed;
 width: 50vw;
+background-color: white;
 }
 
 /* #name {float: left;} */
