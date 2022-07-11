@@ -38,6 +38,7 @@ body {
   font-family: "Suisse Intl";
   box-sizing: content-box;
   scrollbar-width: none;
+  font-size: 4.8vw;
 }
 
 /* #text, #btn-container,  */
@@ -59,7 +60,7 @@ padding: var(--margin);
 height: auto;
 position: fixed;
 width: 100vw;
-font-size: 4.8vw;
+font-size: 1em;
 }
 
 #name {
@@ -77,12 +78,13 @@ a, a:visited {color: black}
 a:focus, a:active {color: blue}
 
 #text, button, #clickarrow {
-  font-size: 7vw;
+  font-size: 1.5em;
   padding: var(--margin);}
 
 #text {
 /* border: solid; */
 margin-top: 14vw;
+line-height: 1.2;
 }
 
 #me {display: flex; }
@@ -108,3 +110,7 @@ border: none;
           }
      100% {margin-left: 0px}
    }
+
+.paragraph, #p1 {
+  margin-bottom: 0.25em;
+}
