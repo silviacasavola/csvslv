@@ -12,7 +12,6 @@
 
 
 /* FONT */
-/* FONT */
 @font-face {
     font-family: "Suisse Intl";
     src: url("assets/font/SuisseIntl-Regular.otf");
@@ -22,45 +21,85 @@
     font-style: normal;
 }
 
-#text, #btn-container, #section_right {display: none}
+/* GLOBAL */
+body {
+  max-width: 100vw;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: "Suisse Intl";
+  box-sizing: content-box;
+  scrollbar-width: none;
+}
 
-main {width: 100vw; }
+/* #text, #btn-container,  */
+#section_right {display: none}
+
+.hidden {display: none}
+
+main {width: 100%; }
 
 
-#mobile-text-container {padding: var(--margin); margin-top: 10vh;}
+/* #mobile-text-container {padding: var(--margin); margin-top: 10vh;} */
 
 header {
+background-color: white;
 top: 0;
 padding: var(--margin);
-border-bottom: solid 1px;
+/* border-bottom: solid 2px; */
 /* height: 8vh; */
 height: auto;
 position: fixed;
 width: 100vw;
+font-size: 4.8vw;
 }
 
-#name {float: left; text-transform: uppercase;
-    /* padding: 0; */
+#name {
+  text-transform: uppercase;
+  padding: 0;
   margin: 0;}
 
-#contacts {
-  float: right;}
-
 .contact_link {
-  padding-left: 1vw;}
+  padding-left: 2vw;}
 
-.contact_link, #name {
-cursor:url(assets/img/clown.png), auto;
+
+/* p, a {font-size: 5vw;} */
+
+a, a:visited {color: black}
+a:focus, a:active {color: blue}
+
+#text, button, #clickarrow {
+  font-size: 7vw;
+  padding: var(--margin);}
+
+#text {
+/* border: solid; */
+margin-top: 14vw;
 }
 
+#me {display: flex; }
 
-p, a {font-size: 5vw;}
+button { background: none; outline: none; cursor: pointer;
+font-style: italic;
+border: none;
+ color: blue;}
 
-a {color: black}
 
-p2 {font-size: 7vw}
+ #clickarrow {
+   padding-left: 20px;
+   text-decoration: none;
+   animation: arrow-click 1s infinite;
+   }
 
-
-body, header {background-color: #b1d8e5;}
-
-a:hover, a:focus {font-weight: bolder; color: black}
+   @keyframes arrow-click {
+     0% {
+           margin-left: 0px;
+     }
+     50% {
+           margin-left: 10px;
+          }
+     100% {margin-left: 0px}
+   }

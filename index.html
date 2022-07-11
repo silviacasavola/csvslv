@@ -43,13 +43,13 @@ Non ci sono riuscita sempre <3 -->
 
 
 <!-- HEADER -->
-<header>
-<div  id='name'>Silvia Casavola</div>
+<header class="d-flex justify-content-between">
+<div  id='name' class="d-inline">Silvia Casavola</div>
 
-<div id="contacts">
-<a class="contact_link" href = "mailto: silcasavola@gmail.com"  target="_blank">E-MAIL</a>
-<a class="contact_link" href="https://www.instagram.com/silvia_kasalova/"  target="_blank">INSTA</a>
-<a class="contact_link" id="lk" href="https://www.linkedin.com/in/silviacasavola/"  target="_blank">LK</a>
+<div id="contacts" class="d-inline-flex">
+<a class="contact_link" href = "mailto: silcasavola@gmail.com"  target="_blank">e-mail</a>
+<a class="contact_link" href="https://www.instagram.com/silvia_kasalova/"  target="_blank">insta</a>
+<a class="contact_link" id="lk" href="https://www.linkedin.com/in/silviacasavola/"  target="_blank">lk</a>
 </div>
 </header>
 
@@ -117,18 +117,67 @@ Non ci sono riuscita sempre <3 -->
     <div id="section_right_container" class="container justify-content-center">
 
 <!-- 1ST PROJECT -->
-    <div class="choice expand" id="prj1">
+    <div class="choice expand" id="prj0">
 
 <!-- 1. PROJECT INDEX -->
     <div class="project-index-container">
         <div class="project-index">
-                <div class="project-index-title">TOD</div>
-                <div class="project-index-year">2021</div>
-                <div class="project-index-category">SPECULATIVE DESIGN</div>
+                <div class="project-index-title">POV</div>
+                <div class="project-index-year">2022</div>
+                <div class="project-index-category">EDITORIAL DESIGN</div>
         </div>
     </div>
 
 <!-- 1. PROJECT CONTENT -->
+<div class="project_content"  onscroll="hideArrow()">
+
+  <div class="img_container imgstandard"> <img class="project-img imgstandard" src="assets/img/pov1.png"> </div>
+  <div class="img_container imgstandard"> <img class="project-img imgstandard" src="assets/img/pov2.png"> </div>
+  <div class="img_container imgstandard"> <img class="project-img imgstandard" src="assets/img/pov3.png"><div class="prjarrow" id="prjarrow1">&darr;</div></div>
+
+
+<div class="project-text">
+  <p> Communication has always been tightly connected to the construction and retention of political power, but it has become more and more crucial since the advent of the Age of Information, reaching a point where the possession of communication systems corresponds to the possession of power. A new space was also also created for everyone to get together and have their say, an amplifier for the unheard and an unprecedented medium to dismantle inequalities.
+    POV is a magazine that presents a critical-theorical cross take, selecting cases from various contexts (contemporary and retrospective) and media (journalism, photography, graphic design, social media, video…), following a common conceptual thread. The theme of each issue responds to a metaphor that draws upon optical phenomena, allowing many interpretations and content diversification. The first issue is dedicated to the “Distortion”.
+  </p>
+</div>
+
+<div class="img_container imgstandard"> <img class="project-img imgstandard" src="assets/img/pov4.png"> </div>
+<div class="img_container imgstandard"> <img class="project-img imgstandard" src="assets/img/pov5.png"> </div>
+<div class="img_container imgstandard"> <img class="project-img imgstandard" src="assets/img/pov6.png"> </div>
+
+<div class="project-text">
+  <p>To be faithful to its purpose of presenting multiple “Point of views” on the “Politics of visuals”, for each selected topic, the magazine offers a case of “top-down” communication –meaning that it comes directly from institutions, politicians and the media– and a case of “bottom-up” communication, often coming from the marginalized and citizens in general, as a creative form of riot and democratic criticism.
+  </p>
+</div>
+
+<div class="project-credits-container">
+  <div class="project-credits">
+<p>TEAM<br>Martina Bracchi<br>Antonio Sacchet<br>Anna Maria Spada<br>Matteo Visini</p>
+</div>
+
+<div class="project-credits" style="border:none">
+<p>ROLE<br>Concept, research, editorial design</p>
+  </div>
+</div>
+</div>
+
+</div>
+
+
+
+<!-- 2. PROJECT CONTENT -->
+<div class="choice unset" id="prj1">
+
+<!-- 1. PROJECT INDEX -->
+<div class="project-index-container">
+    <div class="project-index">
+            <div class="project-index-title">TOD</div>
+            <div class="project-index-year">2021</div>
+            <div class="project-index-category">SPECULATIVE DESIGN</div>
+    </div>
+</div>
+
 <div class="project_content"  onscroll="hideArrow()">
 
   <div class="img_container imgstandard"> <img class="project-img imgstandard" src="https://mir-cdn.behance.net/v1/rendition/project_modules/disp/4a529b113154479.60253383033c9.jpg"> </div>
@@ -180,7 +229,7 @@ animate on scroll.
 <p>ROLE<br>Concept, web design, front-end development, copy</p>
   </div>
 </div>
-
+<br>
 <div class="project-links-container">
 <a class="project-link" href="https://www.behance.net/gallery/113154479/TOD-Your-beloved-forever"  target="_blank"><p>Behance</p></a>
 <a class="project-link" href="https://vimeo.com/user132501622"  target="_blank"><p>Vimeo</p></a>
@@ -243,8 +292,7 @@ a very simple piece of culture that has a surprisingly big impact because of its
 </div>
 
 </div>
-
-
+<br>
 <div class="project-links-container" style="grid-template-columns: 1fr 1fr 1fr">
 <a class="project-link" href="http://pastachute.herokuapp.com/"  target="_blank"><p>Play</p></a>
 <a class="project-link" href="https://github.com/drawwithcode/2020-ctrl-g"  target="_blank"><p>Read more</p></a>
@@ -258,19 +306,19 @@ a very simple piece of culture that has a surprisingly big impact because of its
 
 
 <!-- 3RD PROJECT -->
-<div class="choice unset" id="prj3">
+<!-- <div class="choice unset" id="prj3"> -->
 
 <!-- 3. PROJECT INDEX -->
-    <div class="project-index-container">
+    <!-- <div class="project-index-container">
         <div class="project-index">
                 <div class="project-index-title">TA-DAN</div>
                 <div class="project-index-year">2021</div>
                 <div class="project-index-category">WEB DESIGN</div>
         </div>
-    </div>
+    </div> -->
 
 <!-- 3. PROJECT CONTENT -->
-<div class="project_content"  onscroll="hideArrow()">
+<!-- <div class="project_content"  onscroll="hideArrow()">
 
   <div class="img_container imgstandard"> <img class="project-img imgstandard" src="assets/img/tadan.jpg"> </div>
   <div class="img_container imgstandard"> <img class="project-img imgstandard" src="assets/img/tadan2.jpg"> </div>
@@ -298,7 +346,7 @@ a very simple piece of culture that has a surprisingly big impact because of its
 </div>
 
 </div>
-</div>
+</div> -->
 
 
 <!-- 4TH PROJECT -->
