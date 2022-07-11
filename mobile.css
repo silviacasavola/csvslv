@@ -14,12 +14,17 @@
 /* FONT */
 @font-face {
     font-family: "Suisse Intl";
-    src: url("assets/font/SuisseIntl-Regular.otf");
-    src: url("assets/font/SuisseIntl-Regular.woff2");
-    src: local("Suisse Intl");
+    src: url("./assets/font/SuisseIntl-Regular.otf"),
+   url("./assets/font/SuisseIntl-Regular.otf") format("embedded-opentype"),
+   url("./assets/font/SuisseIntl-Regular.otf") format("truetype"),
+   url("./assets/font/SuisseIntl-Regular.otf") format("woff"),
+   url("./assets/font/SuisseIntl-Regular.otf") format("woff2"),
+   url("./assets/font/SuisseIntl-Regular.otf") format("svg"),
+   url("./assets/font/SuisseIntl-Regular.woff2") format("woff2"),
+   url("./assets/font/SuisseIntl-Regular.woff")
+   ;
     font-weight: normal;
-    font-style: normal;
-}
+  }
 
 /* GLOBAL */
 body {
