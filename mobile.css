@@ -84,7 +84,7 @@ a:focus, a:active {color: blue}
 #text {
 /* border: solid; */
 margin-top: 14vw;
-line-height: 1.2;
+line-height: 1.1;
 }
 
 #me {display: flex; }
@@ -111,6 +111,6 @@ border: none;
      100% {margin-left: 0px}
    }
 
-.paragraph, #p1 {
-  margin-bottom: 0.25em;
+.paragraph, .p1 {
+  margin-bottom: 0.2em;
 }

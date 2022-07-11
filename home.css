@@ -49,6 +49,7 @@ body {
   /* font-family:"Times new Roman"; */
   box-sizing: content-box;
   scrollbar-width: none;
+  font-size: 1.06vw;
 }
 
 body::-webkit-scrollbar {
@@ -81,16 +82,16 @@ a {color: black;}
 a:hover {color: #283de5;}
 
 /* NOME HEADER, INDICE PROGETTI E TESTO PROGETTO */
-#name, .project-index, .project-text {font-size: 18px;}
+#name, .project-index, .project-text {font-size: 1.1em;}
 
 /* CONTATTI HEADER */
-.contact_link {font-size: 16px;, line-height: -1.1;}
+.contact_link {font-size: 1em;, line-height: -1.1;}
 
 /* PARAGRAFI SX */
-.paragraph, #p1, button, .arrow, .prjarrow {font-size: 32px;}
+.paragraph, .p1, button, .arrow, .prjarrow {font-size: 2em;}
 
 /* CblueITI PROGETTI */
-.project-credits, .project-link {font-size: 14px;}
+.project-credits, .project-link {font-size: 0.9em;}
 
 /* LINK HEADER E PRJ */
 .contact_link, .project-link {font-style: italic;}
@@ -141,7 +142,7 @@ margin-top: 4vw;
 padding-left: var(--margin);
 padding-right: var(--margin);
 padding-bottom: var(--margin);
-padding-top: 12px;
+padding-top: 0.8em;
 
 /* font-weight: 100; */
 }
@@ -153,19 +154,19 @@ border: none;
  color: blue;}
 
 #clickarrow {
-  padding-left: 20px;
+  padding-left: 20;
   text-decoration: none;
   animation: arrow-click 1s infinite;
   }
 
   @keyframes arrow-click {
     0% {
-          margin-left: 0px;
+          margin-left: 0;
     }
     50% {
-          margin-left: 10px;
+          margin-left: 10;
          }
-    100% {margin-left: 0px}
+    100% {margin-left: 0}
   }
 
 /* button {border: solid;
@@ -179,9 +180,9 @@ background: none;
 .hidden {display: none}
 
 
-.paragraph, #p1 {
-line-height: 1.3;
-  margin-bottom: 10px;
+.paragraph, .p1 {
+line-height: 1.1;
+  margin-bottom: 0.2em;
   }
 
 #p4 {
