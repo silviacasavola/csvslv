@@ -23,7 +23,8 @@
    url("./assets/font/SuisseIntl-Regular.woff2") format("woff2"),
    url("./assets/font/SuisseIntl-Regular.woff")
    ;
-    font-weight: normal;
+   font-weight:normal;
+    font-style: normal;
   }
 
 /* GLOBAL */
