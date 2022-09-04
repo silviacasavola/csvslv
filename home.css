@@ -25,9 +25,9 @@
    url("./assets/font/SuisseIntl-Regular.otf") format("embedded-opentype"),
    url("./assets/font/SuisseIntl-Regular.otf") format("truetype"),
    url("./assets/font/SuisseIntl-Regular.otf") format("svg"),
-   url("assets/font/SuisseIntl-Regular.woff2") format("woff2"),
-   url("assets/font/SuisseIntl-Regular.woff") format("woff"),
-   url("assets/font/SuisseIntl-Regular.ttf") format("truetype"),
+   url("./assets/font/SuisseIntl-Regular.woff2") format("woff2"),
+   url("./assets/font/SuisseIntl-Regular.woff") format("woff"),
+   url("./assets/font/SuisseIntl-Regular.ttf") format("truetype"),
    ;
     font-weight: normal;
     font-style:normal;
