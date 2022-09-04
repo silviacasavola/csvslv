@@ -1,44 +1,11 @@
 :root {
-/* LAYERS Z-INDEX */
-  --bottom-layer: 0;
-
 /* MARGINS */
   --margin: 4vw;
   --bottom-margin: 3vw;
-
-  --closed-tab-width: 4vw;
-  --open-tab-width: 80vw;
 }
-
-
-/* FONT */
-@font-face {
-    font-family: "Suisse Intl";
-    src: url("./assets/font/SuisseIntl-Regular.otf"),
-   url("./assets/font/SuisseIntl-Regular.otf") format("embedded-opentype"),
-   url("./assets/font/SuisseIntl-Regular.ttf") format("truetype"),
-   /* url("./assets/font/SuisseIntl-Regular.otf") format("woff"),
-   url("./assets/font/SuisseIntl-Regular.otf") format("woff2"), */
-   /* url("./assets/font/SuisseIntl-Regular.otf") format("svg"), */
-   url("./assets/font/SuisseIntl-Regular.woff2") format("woff2"),
-   url("./assets/font/SuisseIntl-Regular.woff") format("woff"),
-   ;
-   font-weight:normal;
-    font-style: normal;
-  }
 
 /* GLOBAL */
 body {
-  max-width: 100vw;
-  top: 0;
-  left: 0;
-  margin: 0;
-  padding: 0;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  font-family: "Suisse Intl";
-  box-sizing: content-box;
-  scrollbar-width: none;
   font-size: 4.8vw;
 }
 

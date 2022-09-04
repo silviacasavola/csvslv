@@ -11,45 +11,13 @@
   --closed-tab-width: 4vw;
   --open-tab-width: 81vw; /*inesatto*/
 
-  --background: #b1d8e5;
-  /* --background: #c9c8e3; */
+  /* --background: #b1d8e5; */
 
   /* --stroke: 3.15px; */
 }
 
-
-/* FONT */
-@font-face {
-    font-family: "Suisse Intl";
-    src: url("./assets/font/SuisseIntl-Regular.otf"),
-   url("./assets/font/SuisseIntl-Regular.otf") format("embedded-opentype"),
-   url("./assets/font/SuisseIntl-Regular.ttf") format("truetype"),
-   /* url("./assets/font/SuisseIntl-Regular.otf") format("woff"),
-   url("./assets/font/SuisseIntl-Regular.otf") format("woff2"), */
-   /* url("./assets/font/SuisseIntl-Regular.otf") format("svg"), */
-   url("./assets/font/SuisseIntl-Regular.woff2") format("woff2"),
-   url("./assets/font/SuisseIntl-Regular.woff") format("woff"),
-   ;
-   font-weight:normal;
-    font-style: normal;
-  }
-
-
-
 /* GLOBAL */
 body {
-  width: 100vw;
-  top: 0;
-  left: 0;
-  margin: 0;
-  padding: 0;
-  /* font-weight: normal; */
-  overflow-y: scroll;
-  overflow-x: hidden;
-  font-family: "Suisse Intl";
-  /* font-family:"Times new Roman"; */
-  box-sizing: content-box;
-  scrollbar-width: none;
   font-size: 16px;
 }
 
