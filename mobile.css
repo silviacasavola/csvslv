@@ -5,8 +5,8 @@
 }
 
 /* GLOBAL */
-body {
-  font-size: 4.8vw;
+html {
+  font-size: 4.6vw;
 }
 
 /* #text, #btn-container,  */
@@ -28,7 +28,7 @@ padding: var(--margin);
 height: auto;
 position: fixed;
 width: 100vw;
-font-size: 1em;
+font-size: 1rem;
 }
 
 #name {
@@ -46,7 +46,7 @@ a, a:visited {color: black}
 a:focus, a:active {color: blue}
 
 #text, button, #clickarrow {
-  font-size: 1.4em;
+  font-size: 1.4rem;
   padding: var(--margin);}
 
 #text {
@@ -80,5 +80,5 @@ border: none;
    }
 
 .paragraph, .p1 {
-  margin-bottom: 0.2em;
+  margin-bottom: 0.2rem;
 }
