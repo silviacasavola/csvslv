@@ -1,7 +1,7 @@
 /* FONT */
 @font-face {
     font-family: "Suisse Intl";
-  src: url("https://www.csvslv.it/assets/font/SuisseIntl-Regular.otf") format("embedded-opentype"),
+  src: url("https://www.csvslv.it/assets/font/SuisseIntl-Regular.otf") format("opentype"),
    url("https://www.csvslv.it/assets/font/SuisseIntl-Regular.ttf") format("truetype"),
    url("https://www.csvslv.it/assets/font/SuisseIntl-Regular.woff2") format("woff2"),
    url("https://www.csvslv.it/assets/font/SuisseIntl-Regular.woff") format("woff");
@@ -12,6 +12,16 @@
    font-weight:normal;
     font-style: normal;
   }
+
+@font-face {
+    font-family: "Suisse Intl";
+    src: url("https://www.csvslv.it/assets/font/SuisseIntl-RegularItalic.otf") format("opentype"),
+   url("https://www.csvslv.it/assets/font/SuisseIntl-RegularItalic.woff2") format("woff2"),
+   url("https://www.csvslv.it/assets/font/SuisseIntl-RegularItalic.woff") format("woff");
+
+   font-weight:normal;
+    font-style: italic;
+    }
 
 body {
   font-family: "Suisse Intl";
