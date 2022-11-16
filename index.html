@@ -599,11 +599,14 @@ $("#btn-blue").css("display", "none");
 <script>
 
 $(".choice").on("click", function(){
-    console.log("test");
     $(".choice").removeClass("expand unset ");
     $(".choice").addClass("small");
+    $(".choice").scrollTop(0);
+    $(".project_content").scrollTop(0);
     $(this).removeClass("small");
     $(this).addClass("expand");
+    $(".choice").scrollTop(0);
+    $(".project_content").scrollTop(0);
 }
 )
 
