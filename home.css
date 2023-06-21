@@ -4,17 +4,21 @@
   --top-layer: 10;
 
 /* MARGINS */
-  --margin: 0.8vw;
+  --margin: 0.5vw;
 
-  --closed-tab-width: 3.2vw;
+  --closed-tab-width: 2.5vw;
   --open-tab-width: 100%;
 
-  --max-width-inner: 32vw;
+  --max-width-inner: 36vw;
+
+  --font-size: 1.5vw;
 }
+
+p {margin: 0;}
 
 /* GLOBAL */
 body {
-  font-size: 1.5vw;
+  font-size: var(--font-size);
   line-height: 110%;
   max-height: 100vh;
   overflow: hidden;
@@ -66,13 +70,14 @@ a:hover {color: #283de5;}
 
 /* HEADER */
 header {
+top: 0;
 padding: var(--margin);
-/* padding: calc(var(--margin)/1.5) var(--margin) calc(var(--margin)/1.5) var(--margin); */
-/* width: 50vw; */
+position: fixed;
+width: 50vw;
 }
 
 .contact_link {
-  padding-left: var(--margin); font-size: 2em;}
+  padding-left: var(--margin);}
 
 #lk, #name {
 cursor:url(assets/img/clown.png), auto;
@@ -85,17 +90,16 @@ width: 100%;
 grid-gap: 0;
 }
 
-#me {display: flex; }
+#me {display: flex; color: white}
 
 #text {
-margin-top: 4vw;
+margin-top: calc(var(--font-size)*2);
 }
 
 #text, #me{
 /* padding-left: var(--margin); */
 padding-right: var(--margin);
 padding-bottom: var(--margin);
-/* font-size: 1.5em; */
 /* padding-top: 0.8rem; */
 
 /* font-weight: 100; */
@@ -106,6 +110,8 @@ font-style: italic;
 border: none;
 /* text-decoration: underline; */
  color: blue;}
+
+#section_left a {color: white}
 
 #clickarrow {
   padding-left: 20;
@@ -177,11 +183,13 @@ line-height: 1.1;
 
 /* SECTION RIGHT */
 
-#section_right {display: flex;}
+#section_right {display: flex;
+  /* background-color: #d7d9ce */
+}
 
 /* .hidden {display: none} */
 
-/* header, #section_left {background-color: #d9d9d9} */
+header, #section_left {background-color: black; color: white}
 
 .container{
     display: flex;
@@ -203,7 +211,7 @@ line-height: 1.1;
     transition: width 0.4s;
 
     /* border-right: solid var(--stroke); */
-    border-right: solid 1px black;
+    /* border-right: solid 1px black; */
 
     display: flex;
 
@@ -217,6 +225,8 @@ line-height: 1.1;
 
 .unset, .small {
   width: var(--closed-tab-width); cursor: pointer;
+  background-color: #d7d9ce;
+  font-size: 1em;
 }
 
 .unset:hover, .small:hover {  width: 7vw; }
@@ -250,9 +260,13 @@ position: relative;
 /* background: green; */
 float: left;}
 
+
+/* #text, #me, .project-index {
+font-size: 1.5em;
+} */
+
 .project-index {
   position: relative;
-  font-size: 2em;
   width: 100vh;
   padding: 0 var(--margin) 0 var(--margin);
   /* padding: 0 20vh 0 20vh; */
@@ -260,9 +274,9 @@ float: left;}
   justify-content: space-between;
   /* display: table;
   grid-template-columns: 1fr 1fr 1fr; */
-  -ms-transform: rotate(90deg)translate(-3.2vw, 0vw);
-      -webkit-transform: rotate(90deg)translate(-3.2vw, 0vw);
-      transform: rotate(90deg)translate(-3.2vw, 0vw);
+  -ms-transform: rotate(90deg)translate(calc(var(--closed-tab-width)*-1), 0vw);
+      -webkit-transform: rotate(90deg)translate(calc(var(--closed-tab-width)*-1), 0vw);
+      transform: rotate(90deg)translate(calc(var(--closed-tab-width)*-1), 0vw);
 transform-origin: bottom left;
 overflow: hidden;
 }
@@ -280,7 +294,7 @@ overflow: hidden;
 
 .project-index-title { float: left; transform:translate(0.1vw, 0);}
 
-.project-index-year {left: 60%; transform:translate(-100%,0);
+.project-index-year {left: 50%; transform:translate(-100%,0);
   position: absolute;}
 
 .project-index-category {float: right;
@@ -361,6 +375,7 @@ right: var(--margin);
 .pasta1 {
   min-height: 40vw;
   max-height: 40vw;
+  object-fit: contain
 }
 
 .pasta2 {
@@ -370,10 +385,11 @@ right: var(--margin);
 
 .video_container {
   width: 100%;
-  height: 21vw;
+  height: 26vw;
   position: relative;
   margin-bottom: var(--margin);
 }
+
 
 /* .anto {
   min-height: 24vw;
@@ -450,28 +466,6 @@ img {
   margin: auto;
 }
 
-
-
-
-
-/* PROVE COLORI */
-/* .choice, header {background-color: #c3e3f4;} */
-/* header {background-color: #f9bfff;} */
-/* #text {background-color: #edffbf;} */
-
-
-/* body, header {background-color: var(--background)} */
-/* body {background-color: #70ffa9;} */
-
-/* .choice, header {background-color: #c3e3f4;} */
-
-/* #text {background-color: #c3e3f4;} */
-
-/* #prj1 {background-color: #b4dbcd}
-#prj2 {background-color: #bca7d0}
-#prj3 {background-color: #eae5ab}
-#prj4 {background-color: #abbedc}
-#prj5 {background-color: #b4dbcd} */
 
 
 
