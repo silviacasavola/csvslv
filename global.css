@@ -10,22 +10,7 @@
   --open-tab-width: 80vw;
 }
 
-
-/* FONT */
-@font-face {
-    font-family: "Suisse Intl";
-    src: url("./assets/font/SuisseIntl-Regular.otf"),
-   url("./assets/font/SuisseIntl-Regular.otf") format("embedded-opentype"),
-   url("./assets/font/SuisseIntl-Regular.ttf") format("truetype"),
-   /* url("./assets/font/SuisseIntl-Regular.otf") format("woff"),
-   url("./assets/font/SuisseIntl-Regular.otf") format("woff2"), */
-   /* url("./assets/font/SuisseIntl-Regular.otf") format("svg"), */
-   url("./assets/font/SuisseIntl-Regular.woff2") format("woff2"),
-   url("./assets/font/SuisseIntl-Regular.woff") format("woff"),
-   ;
-   font-weight:normal;
-    font-style: normal;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital@0;1&family=Archivo:ital,wght@0,300;1,300&display=swap');
 
 /* GLOBAL */
 body {
@@ -36,10 +21,10 @@ body {
   padding: 0;
   overflow-y: scroll;
   overflow-x: hidden;
-  font-family: "Suisse Intl";
+  font-family: "Arial Narrow";
   box-sizing: content-box;
   scrollbar-width: none;
-  font-size: 4.8vw;
+  /* font-size: 4.8vw; */
 }
 
 /* #text, #btn-container,  */
@@ -55,22 +40,22 @@ main {width: 100%; }
 header {
 background-color: white;
 top: 0;
-padding: var(--margin);
-/* border-bottom: solid 2px; */
+/* padding: var(--margin);
+border-bottom: solid 1px; */
 /* height: 8vh; */
-height: auto;
+/* height: auto; */
 position: fixed;
-width: 100vw;
-font-size: 1em;
+/* font-size: 1em; */
+/* font-size: 2em; */
 }
 
-#name {
-  text-transform: uppercase;
-  padding: 0;
+/* #name { */
+  /* text-transform: uppercase; */
+  /* padding: 0;
   margin: 0;}
 
 .contact_link {
-  padding-left: 2vw;}
+  padding-left: 2vw;} */
 
 
 /* p, a {font-size: 5vw;} */
@@ -79,7 +64,7 @@ a, a:visited {color: black}
 a:focus, a:active {color: blue}
 
 #text, button, #clickarrow {
-  font-size: 1.4em;
+  /* font-size: 1.4em; */
   padding: var(--margin);}
 
 #text {

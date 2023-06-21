@@ -1,6 +1,4 @@
-<!-- Che figata! Stai ispezionando il mio codice?
-Ho cercato di essere ordinata!
-Non ci sono riuscita sempre <3 -->
+<!-- Please don't inspect this code, it's so old I cringe at it... -->
 
 <html lang="en">
 
@@ -23,7 +21,7 @@ Non ci sono riuscita sempre <3 -->
     <!-- Desktop stylesheet -->
     <link rel='stylesheet' type='text/css' href='home.css' media="screen and (min-width:992px)">
     <!-- Mobile portrait mode -->
-    <link rel='stylesheet' type='text/css' href='mobile.css' media="screen and (max-width:991px)">
+    <link rel='stylesheet' type='text/css' href='mobile.css' media="screen and (max-width:991.9px)">
     <!-- Mobile landscape mode -->
     <!-- <link rel='stylesheet' type='text/css' href='mobile.css' media="screen and (orientation:landscape) and (max-width:991px)"> -->
 
@@ -35,30 +33,32 @@ Non ci sono riuscita sempre <3 -->
 <body>
 
 <!-- MAIN -->
-<main>
+<main class="d-flex">
 
 
 <!-- LEFT SECTION -->
-<section id="section_left">
+<section id="section_left" class="d-inline-block col-lg-4">
 
   <!-- <div id="mobile-text-container"><p2 id="mobile-text">My name is Silvia Casavola and this should be my web portfolio. Please open this link on a computer! I'm going to make a mobile version but now I'm too busy graduating! Thank you</p2></div> -->
 
 
 <!-- HEADER -->
-<header class="d-flex justify-content-between align-items-center">
+<header class="d-flex justify-content-between align-items-center col-lg-4">
 <div  id='name' class="d-inline">Silvia Casavola</div>
+
 
 <div id="contacts" class="d-inline-flex">
 <a class="contact_link" href = "mailto: silcasavola@gmail.com"  target="_blank">e-mail</a>
-<a class="contact_link" href="https://www.instagram.com/silvia_kasalova/"  target="_blank">insta</a>
 <a class="contact_link" id="lk" href="https://www.linkedin.com/in/silviacasavola/"  target="_blank">lk</a>
+<a class="contact_link" id="cv" href="assets/cv.pdf"  target="_blank">cv</a>
+<a class="contact_link" href="https://www.instagram.com/silvia_kasalova/"  target="_blank">ig</a>
 </div>
 </header>
 
 <div id="text">
 <div class="p1">The one above is my name.<br></div>
 <div class="p1">I am 23 years old.<br></div>
-<div class="p1">I live in Milan.<br></div>
+<div class="p1">I live in Milan but you can currently find me in Berlin.<br></div>
 <div class="p1">I am a Communication Design student.<br></div>
 <div class="p1">I like some things that you can do with a keyboard.</div>
 
@@ -105,6 +105,7 @@ Non ci sono riuscita sempre <3 -->
 </div>
 
 <div id="me">
+<br>
 <button id="btn" onclick="showText()"><a href="#me" id="btn-text">Like what?</a></button>
 <button id="cute-no" onclick="showText2()" style="display: none"><a href="#me" id="btn-text">No</a></button>
 
@@ -118,57 +119,284 @@ Non ci sono riuscita sempre <3 -->
 </section>
 
 <!-- RIGHT SECTION -->
-<section id="section_right">
+<section id="section_right" class="d-none col-8 d-lg-inline-block">
 
     <div id="section_right_container" class="container justify-content-center">
 
 <!-- 1ST PROJECT -->
+<!-- FFFF FFFF FFFF -->
     <div class="choice expand" id="prj0">
 
 <!-- 1. PROJECT INDEX -->
     <div class="project-index-container">
         <div class="project-index">
-                <div class="project-index-title">POV</div>
-                <div class="project-index-year">2022</div>
-                <div class="project-index-category">EDITORIAL</div>
+                <div class="project-index-title">FFFF</div>
+                <div class="project-index-year">2023</div>
+                <div class="project-index-category">information</div>
         </div>
     </div>
 
 <!-- 1. PROJECT CONTENT -->
 <div class="project_content"  onscroll="hideArrow()">
-
-  <div class="img_container imgstandard"> <img class="project-img imgstandard" src="assets/img/pov1.jpg"> </div>
-  <div class="img_container imgstandard"> <img class="project-img imgstandard" src="assets/img/pov2.jpg"> </div>
-  <div class="img_container imgstandard"> <img class="project-img imgstandard" src="assets/img/pov3.jpg"><div class="prjarrow" id="prjarrow1">&darr;</div></div>
-
+  <div class="img_container imgstandard"> <img class="project-img imgstandard" src="assets/img/ffff1.jpg"> </div>
+  <div class="img_container imgstandard"> <img class="project-img imgstandard" src="assets/img/ffff2.gif"> </div>
+  <div class="img_container imgstandard"> <img class="project-img imgstandard" src="assets/img/ffff3.jpg"><div class="prjarrow" id="prjarrow1">&darr;</div></div>
 
 <div class="project-text">
-  <p> Communication has always been tightly connected to the construction and retention of political power, but it has become more and more crucial since the advent of the Age of Information, reaching a point where the possession of communication systems corresponds to the possession of power. A new space was also also created for everyone to get together and have their say, an amplifier for the unheard and an unprecedented medium to dismantle inequalities.
-    POV is a magazine that presents a critical-theorical cross take, selecting cases from various contexts (contemporary and retrospective) and media (journalism, photography, graphic design, social media, video…), following a common conceptual thread. The theme of each issue responds to a metaphor that draws upon optical phenomena, allowing many interpretations and content diversification. The first issue is dedicated to the “Distortion”.
-  </p>
+  <p> Found in Fast Fashion Factories (FFFF) is a website developed
+during the <a href="https://densitydesign.github.io/teaching-dd18/">Information Design course</a> led by <a href="https://densitydesign.org/">DensityDesign</a>
+research lab at Politecnico di Milano. It is an archive that collects
+6683 photos posted on Google Maps geolocated in the area
+of 1000 garment factories around the world.
+All the addresses were found in the list of level 1 (tier 1) suppliers
+that have produced for MANGO in 2021, but they are not owned
+by Mango and supply multiple fast fashion brands.
+We decided to publish User Generated Content that is unseen
+and hard to gather, in order to share a different (hopefully,
+more candid) perspective about life inside off-shore fashion
+factories, with the aim of restoring the physicality of people
+and processes behind the fashion industry.</p>
 </div>
 
-<div class="img_container imgstandard"> <img class="project-img imgstandard" src="assets/img/pov4.jpg"> </div>
-<div class="img_container imgstandard"> <img class="project-img imgstandard" src="assets/img/pov5.jpg"> </div>
-<div class="img_container imgstandard"> <img class="project-img imgstandard" src="assets/img/pov6.jpg"> </div>
+<div class="video_container" style="border: solid; border-width: 1px 0px 1px 0px"><iframe src="https://drive.google.com/file/d/1-sRXRNoX7M4uvwu-2HNiMIGtBoVJ6HH7/preview" allow="autoplay"></iframe></div>
 
 <div class="project-text">
-  <p>To be faithful to its purpose of presenting multiple “Point of views” on the “Politics of visuals”, for each selected topic, the magazine offers a case of “top-down” communication –meaning that it comes directly from institutions, politicians and the media– and a case of “bottom-up” communication, often coming from the marginalized and citizens in general, as a creative form of riot and democratic criticism.
+  <p>The main section is the "Atlas", where users can
+browse all the images. These were classified in 16
+categories that we believed revealed meaningful
+patterns about the content.
+In the "Clusters" visualization, the images are
+located on the nodes of a network developed
+with Gephi. They can be browsed through zoom
+and pan interactions that recall maps'.
+To achieve this, we started from PixPlot
+as a convenient infrastructure: it already allowed
+these interactions and to select alternative
+visualizations. One of my main tasks was
+to "hammer" PixPlot and personalise its interface
+through HTML, CSS and JavaScript.
   </p>
 </div>
 
 <div class="project-credits-container">
   <div class="project-credits">
-<p>TEAM<br>Martina Bracchi<br>Antonio Sacchet<br>Anna Maria Spada<br>Matteo Visini</p>
+<p>TEAM<br>Giovanni Bonassi<br>Cecilia Buonocunto<br>Martina Bracchi<br>Vlada Ershova<br>Kateryna Lapshyna<br>Matteo Visini</p>
 </div>
 
 <div class="project-credits" style="border:none">
-<p>ROLE<br>Concept, research, editorial design</p>
+<p>ROLE<br>concept, web design, front-end development</p><br><br>
+<a class="project-link" href="https://densitydesign.github.io/dd18-g04/"><p>Website</p></a>
   </div>
 </div>
 </div>
 </div>
 
+
+<!-- 2. 2ND PROJECT -->
+<!-- VENETIE MML VENETIE MML VENETIE MML -->
+<div class="choice unset" id="prj2">
+
+<!-- 2. PROJECT INDEX -->
+  <div class="project-index-container">
+      <div class="project-index">
+        <div class="project-index-title">Venetie MML</div>
+        <div class="project-index-year">2023</div>
+        <div class="project-index-category">information</div>
+      </div>
+    </div>
+
+      <div class="project_content"  onscroll="hideArrow()">
+
+        <div class="img_container imgstandard"> <img class="project-img imgstandard" src="assets/img/venetie1.jpg"> </div>
+        <div class="img_container imgstandard"> <img class="project-img imgstandard" src="assets/img/venetie2.jpg"> </div>
+
+
+<div class="project-text">
+<p>The exhibition of the Venice Pavilion for La Biennale Architettura
+2023, currently visitable in the Giardini di Sant’Elena,
+is titled VENETIE MML, the great view, the work explained.
+The focus of the exhibition is telling how the city has changed,
+continues to change, and how it will change in the near future.
+With the art direction of Stefano Mandato, I designed part
+of the tapestry of the pavilion, a 4-meters-long visualization
+that highlights the urban interventions carried out by the municipality
+since 2016, the budget invested and the main areas of action.</p>
+</div>
+
+
+<div class="project-credits-container">
+    <div class="project-credits">
+    <p>GRAPHIC TEAM<br>Stefano Mandato</p>
+    <br>
+    <p>CLIENT<br>Comune di Venezia and Università IUAV di Venezia</p>
+    </div>
+
+      <div class="project-credits" style="border:none">
+      <p>ROLE<br>data visualization</p><br>
+      <a class="project-link d-inline" href="https://www.instagram.com/padiglionevenezia/"  target="_blank"><p>Instagram</p></a>
+      </div>
+      </div>
+
+</div>
+</div>
+
+
+<!-- 3RD PROJECT -->
+<!-- HUMAN FACE HUMAN FACE HUMAN FACE -->
+
+    <div class="choice unset" id="prj3">
+<!-- 3. PROJECT INDEX -->
+<div class="project-index-container">
+      <div class="project-index">
+            <div class="project-index-title">Human Face</div>
+            <div class="project-index-year">2023</div>
+            <div class="project-index-category">information</div>
+  </div>
+            </div>
+
+            <div class="project_content"  onscroll="hideArrow()">
+
+
+            <!-- 4. PROJECT CONTENT -->
+            <div class="project-content">
+
+              <div class="img_container imgstandard"> <img class="project-img imgstandard" src="assets/img/humanface1.jpg"> </div>
+              <div class="img_container imgstandard"> <img class="project-img imgstandard" src="assets/img/humanface2.jpg"> </div>
+              <div class="img_container imgstandard"> <img class="project-img imgstandard" src="assets/img/humanface3.jpg"><div class="prjarrow" id="prjarrow1">&darr;</div></div>
+
+
+            <div class="project-text">
+              <p>Human face is a book about the life of a young adult (me) or at least
+the part she decided to share on social media and publicly present
+herself with. Each page of the book represents a personal photo,
+but it was turned into a typographic composition by a computer
+vision algorithm (Clarifai) that scans the images and detects their
+content. The image-to-text process replaces the overabundance
+of images of the original social medium with the paradoxical
+absence of visual clues. The source of the data relates to the concept
+of digital identity and its relationship with the ego. The process
+is connected to employing algorithmic processes as new tools
+for creative/uncreative expression of our digitally mediated lives.
+Lastly, the medium refers to literary experimentalism and takes
+inspiration from concrete poetry and uncreative writing practices..
+              </p>
+            </div>
+
+            <div class="project-credits-container">
+              <div class="project-credits">
+            <p>TEAM<br>Individual project</p>
+            </div>
+
+            <div class="project-credits" style="border:none">
+            <p>ROLE<br>concept, data scraping, editorial design</p>
+              </div>
+            </div>
+            </div>
+            </div>
+            </div>
+
+
+      <!-- 4. ULTRA-FAST ULTRA-FAST ULTRA-FAST -->
+
+      <div class="choice unset" id="prj4">
+
+      <!-- 4. PROJECT INDEX -->
+      <div class="project-index-container">
+          <div class="project-index">
+                  <div class="project-index-title">Ultra-fast</div>
+                  <div class="project-index-year">2022</div>
+                  <div class="project-index-category">information</div>
+          </div>
+      </div>
+
+            <!-- 4. PROJECT CONTENT -->
+      <div class="project_content"  onscroll="hideArrow()">
+
+        <div class="img_container imgstandard"> <img class="project-img imgstandard" src="assets/img/ultrafast1.jpg"> </div>
+        <div class="img_container imgstandard"> <img class="project-img imgstandard" src="assets/img/ultrafast2.jpg"> </div>
+        <div class="img_container imgstandard"> <img class="project-img imgstandard" src="assets/img/ultrafast3.jpg"> </div>
+
+
+      <div class="project-text">
+        <p>Ultra-fast is a report about fast fashion, its online perception
+      and rhetorics. It was developed during the <a href="https://densitydesign.github.io/teaching-dd18/">Information Design course</a>
+      led by <a href="https://densitydesign.org/">DensityDesign</a> research lab at Politecnico di Milano.
+      The topic had to be researched and analysed through online data
+      that we had to collect ourselves using web scraping tools.
+      The section I curated observes Google research results
+      to the query fast fashion, compared to the results to the query
+      of 8 single fast fashion brands. The goal was to map the tone
+      of the discourse and compare it among brands.
+      The main visualizations I developed are heatmaps and stack
+      bar charts that highlight critical results and topic recurrance.</p>
+      </div>
+
+
+      <div class="project-credits-container">
+        <div class="project-credits">
+      <p>TEAM<br>Giovanni Bonassi<br>Cecilia Buonocunto<br>Martina Bracchi<br>Vlada Ershova<br>Kateryna Lapshyna<br>Matteo Visini</p>
+      </div>
+
+      <div class="project-credits" style="border:none">
+      <p>ROLE<br>research, data scraping, analysis
+      and visualization, editorial design</p>
+      </div>
+
+      </div>
+
+      </div>
+            </div>
+
+
+<!-- 4RTH PROJECT -->
+    <div class="choice unset" id="prj4">
+<!-- 4. PROJECT INDEX -->
+<div class="project-index-container">
+      <div class="project-index">
+            <div class="project-index-title">Pov</div>
+            <div class="project-index-year">2022</div>
+            <div class="project-index-category">editorial</div>
+  </div>
+            </div>
+
+            <div class="project_content"  onscroll="hideArrow()">
+
+
+            <!-- 4. PROJECT CONTENT -->
+            <div class="project-content">
+
+              <div class="img_container imgstandard"> <img class="project-img imgstandard" src="assets/img/pov1.jpg"> </div>
+              <div class="img_container imgstandard"> <img class="project-img imgstandard" src="assets/img/pov2.jpg"> </div>
+              <div class="img_container imgstandard"> <img class="project-img imgstandard" src="assets/img/pov3.jpg"><div class="prjarrow" id="prjarrow1">&darr;</div></div>
+
+
+            <div class="project-text">
+              <p> Communication has always been tightly connected to the construction and retention of political power, but it has become more and more crucial since the advent of the Age of Information, reaching a point where the possession of communication systems corresponds to the possession of power. A new space was also also created for everyone to get together and have their say, an amplifier for the unheard and an unprecedented medium to dismantle inequalities.
+                POV is a magazine that presents a critical-theorical cross take, selecting cases from various contexts (contemporary and retrospective) and media (journalism, photography, graphic design, social media, video…), following a common conceptual thread. The theme of each issue responds to a metaphor that draws upon optical phenomena, allowing many interpretations and content diversification. The first issue is dedicated to the “Distortion”.
+              </p>
+            </div>
+
+            <div class="img_container imgstandard"> <img class="project-img imgstandard" src="assets/img/pov4.jpg"> </div>
+            <div class="img_container imgstandard"> <img class="project-img imgstandard" src="assets/img/pov5.jpg"> </div>
+            <div class="img_container imgstandard"> <img class="project-img imgstandard" src="assets/img/pov6.jpg"> </div>
+
+            <div class="project-text">
+              <p>To be faithful to its purpose of presenting multiple “Point of views” on the “Politics of visuals”, for each selected topic, the magazine offers a case of “top-down” communication –meaning that it comes directly from institutions, politicians and the media– and a case of “bottom-up” communication, often coming from the marginalized and citizens in general, as a creative form of riot and democratic criticism.
+              </p>
+            </div>
+
+            <div class="project-credits-container">
+              <div class="project-credits">
+            <p>TEAM<br>Martina Bracchi<br>Antonio Sacchet<br>Anna Maria Spada<br>Matteo Visini</p>
+            </div>
+
+            <div class="project-credits" style="border:none">
+            <p>ROLE<br>concept, research, editorial design</p>
+              </div>
+            </div>
+            </div>
+            </div>
+            </div>
 
 
 <!-- 2. PROJECT CONTENT -->
@@ -179,7 +407,7 @@ Non ci sono riuscita sempre <3 -->
     <div class="project-index">
             <div class="project-index-title">RETUALS</div>
             <div class="project-index-year">2022</div>
-            <div class="project-index-category">WEB</div>
+            <div class="project-index-category">web</div>
     </div>
 </div>
 
@@ -187,7 +415,7 @@ Non ci sono riuscita sempre <3 -->
 
   <div class="img_container imgstandard"> <img class="project-img imgstandard" src="assets/img/retuals.gif"> </div>
   <div class="img_container imgstandard"> <img class="project-img imgstandard" src="assets/img/retuals2.gif"> </div>
-  <div class="img_container imgstandard"> <img class="project-img imgstandard" src="assets/img/retuals3.gif"> </div>
+  <div class="img_container imgstandard"> <img class="project-img imgstandard" src="assets/img/retuals4.gif"> </div>
 
 
 <div class="project-text">
@@ -212,7 +440,7 @@ diagram and represents a recurring graph that marks each project.</p>
 </div>
 
 <div class="project-credits" style="border:none">
-<p>ROLE<br>Concept, art direction, web design, front-end development</p>
+<p>ROLE<br>concept, art direction, web design, front-end development</p>
   </div>
 </div>
 <br>
@@ -234,7 +462,7 @@ diagram and represents a recurring graph that marks each project.</p>
         <div class="project-index">
                 <div class="project-index-title">PASTA CHUTE</div>
                 <div class="project-index-year">2021</div>
-                <div class="project-index-category">WEB</div>
+                <div class="project-index-category">web</div>
         </div>
     </div>
 
@@ -272,7 +500,7 @@ a very simple piece of culture that has a surprisingly big impact because of its
 </div>
 
 <div class="project-credits">
-<p>ROLE<br>Concept, copywriting, web design, front-end development</p>
+<p>ROLE<br>concept, copywriting, web design, front-end development</p>
 </div>
 
 </div>
@@ -288,60 +516,15 @@ a very simple piece of culture that has a surprisingly big impact because of its
 
 
 
-
-<!-- 3RD PROJECT -->
-<!-- <div class="choice unset" id="prj3"> -->
-
-<!-- 3. PROJECT INDEX -->
-    <!-- <div class="project-index-container">
-        <div class="project-index">
-                <div class="project-index-title">TA-DAN</div>
-                <div class="project-index-year">2021</div>
-                <div class="project-index-category">WEB DESIGN</div>
-        </div>
-    </div> -->
-
-<!-- 3. PROJECT CONTENT -->
-<!-- <div class="project_content"  onscroll="hideArrow()">
-
-  <div class="img_container imgstandard"> <img class="project-img imgstandard" src="assets/img/tadan.jpg"> </div>
-  <div class="img_container imgstandard"> <img class="project-img imgstandard" src="assets/img/tadan2.jpg"> </div>
-
-
-<div class="project-text">
-  <p>Do you remember Kinder surprises? We do too. Ta-dan is a website the aims at providing an interactive
-    archive for all the past collections of surprises put on the market, posting some editorials that
-    ironically examine the main trends that shaped the 90s and early 2000
-    pop culture and influenced the themes of the first collections.
-    The website features fun and colorful visuals and a lot of small interactions, minigames and internal links,
-    that make the experience fun and impredictable.
-  </p>
-</div>
-
-
-<div class="project-credits-container">
-  <div class="project-credits">
-<p>TEAM<br>Martina Bracchi<br>Levi Fracasso<br>Alessandro Gori<br>Maria Lucaccioni<br>Silvia Sghirinzetti<br>Matteo Visini</p>
-</div>
-
-<div class="project-credits" >
-<p>ROLE<br>Web design, front-end development</p>
-  </div>
-</div>
-
-</div>
-</div> -->
-
-
 <!-- 4TH PROJECT -->
 <div class="choice unset" id="prj4">
 
 <!-- 4. PROJECT INDEX -->
 <div class="project-index-container">
     <div class="project-index">
-            <div class="project-index-title">TOD</div>
+            <div class="project-index-title">Tod</div>
             <div class="project-index-year">2021</div>
-            <div class="project-index-category">SPECULATIVE</div>
+            <div class="project-index-category">speculative</div>
     </div>
 </div>
 
@@ -349,7 +532,7 @@ a very simple piece of culture that has a surprisingly big impact because of its
 
   <div class="img_container imgstandard"> <img class="project-img imgstandard" src="https://mir-cdn.behance.net/v1/rendition/project_modules/disp/4a529b113154479.60253383033c9.jpg"> </div>
   <div class="img_container imgstandard"> <img class="project-img imgstandard" src="https://mir-cdn.behance.net/v1/rendition/project_modules/disp/0394ca113154479.60247bf6b397e.jpg"> </div>
-  <div class="img_container imgstandard"> <img class="project-img imgstandard" src="https://mir-cdn.behance.net/v1/rendition/project_modules/source/7bb22c113154479.60247bf882569.gif""><div class="prjarrow" id="prjarrow1">&darr;</div></div>
+  <div class="img_container imgstandard"> <img class="project-img imgstandard" src="https://mir-cdn.behance.net/v1/rendition/project_modules/source/7bb22c113154479.60247bf882569.gif"><div class="prjarrow" id="prjarrow1">&darr;</div></div>
 
 
 <div class="project-text">
@@ -411,7 +594,7 @@ animate on scroll.
 
 
 <!-- 5TH PROJECT -->
-<div class="choice unset" style="border: none" id="prj5" onscroll="hideArrow()">
+<div class="choice unset" style="border: none" id="prj9" onscroll="hideArrow()">
 
 <!-- 5. PROJECT INDEX -->
     <div class="project-index-container">
@@ -439,17 +622,6 @@ animate on scroll.
   </div>
 </div>
 
-
-
-
-
-<!-- <div id="contacts_mobile-container"> -->
-  <div id="contacts_mobile">
-<a class="contact_link" id="mail" href = "mailto: silcasavola@gmail.com"  target="_blank">E-MAIL</a>
-<a class="contact_link" id="ig" href="https://www.instagram.com/silvia_kasalova/"  target="_blank">INSTA</a>
-<a class="contact_link" id="lk" href="https://www.linkedin.com/in/silviacasavola/"  target="_blank">LK</a>
-<!-- </div> -->
-</div>
 
 </section>
 
