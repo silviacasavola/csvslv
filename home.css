@@ -57,7 +57,7 @@ cursor:url(assets/img/clown.png), auto;
 }
 
 #text {
-margin-top: calc(var(--font-size)*2);
+margin-top: calc(var(--font-size) + var(--margin)*2);
 }
 
 #text, #me{
@@ -88,7 +88,6 @@ border: none;
     100% {margin-left: 0}
   }
 
-.hidden {display: none}
 
 .paragraph, .p1 {
 /* line-height: 1.1; */
@@ -277,6 +276,7 @@ right: var(--margin);
   transform:translate(-5%, 0)
 }
 
+/* #prj1 .project-link {text} */
 
 .pasta1 {
   min-height: 40vw;
@@ -334,18 +334,19 @@ display: grid;
 grid-template-columns: 1fr 1fr;
 }
 
-.project-credits {display: inline-grid;}
-
-.project-credits p, .project-links-container p {margin-bottom: 0;}
+.project-credits {display: inline-flex;
+flex-direction: column;
+justify-content: space-between;}
 
 
 .project-links-container {
 max-width: var(--max-width-inner);
-/* max-width:27vw; */
-display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr;}
+display: flex;}
 
-.project-link {display: inline-grid;}
+#prj7 .project-links-container, #prj8 .project-links-container  {
+justify-content: space-between;}
+
+/* .project-link {display: inline-;} */
 
 /* .project-text-container {
 

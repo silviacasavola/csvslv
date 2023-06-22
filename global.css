@@ -24,13 +24,9 @@ main {width: 100%; }
 
 header {
 position: fixed;
-background-color: white;
 top: 0;
 padding: var(--margin);
-/* height: auto; */
-/* border-bottom: solid 1px; */
-/* height: 8vh; */
-/* font-size: 1em; */
+line-height: var(--font-size);
 }
 
 .contact_link {
@@ -59,10 +55,7 @@ line-height: 1.1;
 button { background: none; outline: none; cursor: pointer;
 font-style: italic;
 border: none;
- color: blue;
 }
-
-button a {color: white}
 
 
  #clickarrow {
@@ -81,6 +74,9 @@ button a {color: white}
      100% {margin-left: 0px}
    }
 
-.paragraph, .p1 {
+/* .paragraph, .p1 {
   margin-bottom: 0.2em;
-}
+} */
+
+
+.hidden {display: none}

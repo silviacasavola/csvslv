@@ -1,58 +1,40 @@
 :root {
 /* MARGINS */
-  --margin: 4vw;
+  --margin: 3vw;
   --bottom-margin: 3vw;
+
+  --font-size: 5vw;
 }
 
 /* GLOBAL */
 html {
-  font-size: 4.6vw;
+  font-size: var(--font-size);
 }
-
-/* #text, #btn-container,  */
-#section_right {display: none}
-
-.hidden {display: none}
 
 main {width: 100%; }
 
-
-/* #mobile-text-container {padding: var(--margin); margin-top: 10vh;} */
-
 header {
 background-color: white;
-top: 0;
-padding: var(--margin);
-/* border-bottom: solid 2px; */
-/* height: 8vh; */
-height: auto;
-position: fixed;
 width: 100vw;
-font-size: 1rem;
 }
 
-#name {
-  text-transform: uppercase;
-  padding: 0;
-  margin: 0;}
-
 .contact_link {
-  padding-left: 2vw;}
+  padding-left: calc(var(--margin)*2)}
 
-
-/* p, a {font-size: 5vw;} */
+/* header a {text-transform: uppercase;} */
 
 a, a:visited {color: black}
 a:focus, a:active {color: blue}
 
 #text, button, #clickarrow {
-  font-size: 1.4rem;
+  /* font-size: 1.4rem; */
   padding: var(--margin);}
 
 #text {
 /* border: solid; */
-margin-top: 14vw;
+/* margin-top: 14vw; */
 line-height: 1.1;
+margin-top: calc(var(--font-size) + var(--margin)*2);
 }
 
 #me {display: flex; }
