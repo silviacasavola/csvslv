@@ -1,9 +1,16 @@
-/* FONT */
-@font-face {
-    font-family: "Arial Narrow";
-    src: url("./assets/font/arial-narrow.otf") format("embedded-opentype");
-    font-style: normal;
-  }
+:root {
+/* LAYERS Z-INDEX */
+  --bottom-layer: 0;
+
+/* MARGINS */
+  --margin: 4vw;
+  --bottom-margin: 3vw;
+
+  --closed-tab-width: 4vw;
+  --open-tab-width: 80vw;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital@0;1&family=Archivo:ital,wght@0,300;1,300&display=swap');
 
 /* GLOBAL */
 body {
@@ -14,35 +21,47 @@ body {
   padding: 0;
   overflow-y: scroll;
   overflow-x: hidden;
-  /* font-family: "Arial Narrow"; */
-  font-family: "Times New Roman";
+  font-family: "Arial Narrow";
   box-sizing: content-box;
   scrollbar-width: none;
+  /* font-size: 4.8vw; */
 }
+
+/* #text, #btn-container,  */
+#section_right {display: none}
+
+.hidden {display: none}
 
 main {width: 100%; }
 
+
+/* #mobile-text-container {padding: var(--margin); margin-top: 10vh;} */
+
 header {
-position: fixed;
 background-color: white;
 top: 0;
 padding: var(--margin);
-/* height: auto; */
 /* border-bottom: solid 1px; */
 /* height: 8vh; */
+height: auto;
+position: fixed;
+width: 100vw;
 /* font-size: 1em; */
 }
+
+#name {
+  /* text-transform: uppercase; */
+  padding: 0;
+  margin: 0;}
 
 .contact_link {
   padding-left: 2vw;}
 
 
-p {margin: 0;}
-
 /* p, a {font-size: 5vw;} */
 
-a, a:visited {color: black}
-a:hover, a:focus, a:active {color: blue}
+/* a, a:visited {color: black} */
+a:focus, a:active {color: blue}
 
 #text, button, #clickarrow {
   /* font-size: 1.4em; */
@@ -61,8 +80,6 @@ font-style: italic;
 border: none;
  color: blue;
 }
-
-button a {color: white}
 
 
  #clickarrow {
