@@ -19,10 +19,11 @@ width: 100vw;
 }
 
 .contact_link {
-  padding-left: calc(var(--margin)*2)}
+  padding-left: calc(var(--margin)*1.5)}
 
 /* header a {text-transform: uppercase;} */
 
+a {font-style: italic;}
 a, a:visited {color: black}
 a:focus, a:active {color: blue}
 
@@ -35,6 +36,7 @@ a:focus, a:active {color: blue}
 /* margin-top: 14vw; */
 line-height: 1.1;
 margin-top: calc(var(--font-size) + var(--margin)*2);
+width: 90%;
 }
 
 #me {display: flex; }
