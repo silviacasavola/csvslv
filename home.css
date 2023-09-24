@@ -197,7 +197,7 @@ transform-origin: bottom left;
 overflow: hidden;
 }
 
-.project-index-title {text-transform: uppercase;}
+/* .project-index-title {text-transform: uppercase;} */
 
 .project-index-title, .project-index-year, .project-index-category {
    line-height: var(--closed-tab-width);
