@@ -20,22 +20,21 @@ transform: rotate(-5deg);
 /* border: solid; */
 }
 
-#name
-{
-  /* margin-bottom: 1.3vw; */
-padding: 1.3vw;
-  /* width: 100%; text-align: center; */
-}
 
 a {
-  text-decoration: underline; 
+  text-decoration: underline;
 }
 
 /* MEDIA SPECIFIC */
+
+#name
+{
+padding: 1.3vw;
+}
+
 #text {
   position: absolute;
   top: 1.3vw; left: 0;
-  /* width: 40%; */
   white-space: pre;
   padding: 1.3vw;
 }
