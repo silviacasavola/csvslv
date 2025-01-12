@@ -1,82 +1,46 @@
-/* FONT */
-@font-face {
-    font-family: "Arial Narrow";
-    src: url("./assets/font/arial-narrow.otf") format("embedded-opentype");
-    font-style: normal;
-  }
-
 /* GLOBAL */
 body {
   max-width: 100vw;
   top: 0;
   left: 0;
   margin: 0;
-  padding: 0;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  overflow: hidden;
   /* font-family: "Arial Narrow"; */
   font-family: "Times New Roman";
+  background-color: #F4F4F4;
+  color: black;
   box-sizing: content-box;
   scrollbar-width: none;
+  line-height: 1.1;
 }
-
-main {width: 100%; }
-
-header {
-position: fixed;
-top: 0;
-padding: var(--margin);
-line-height: var(--font-size);
-}
-
-.contact_link {
-  padding-left: 2vw;}
-
-
-p {margin: 0;}
-
-/* p, a {font-size: 5vw;} */
-
-a, a:visited {color: black}
-a:hover, a:focus, a:active {color: blue}
-
-#text, button, #clickarrow {
-  /* font-size: 1.4em; */
-  padding: var(--margin);}
 
 #text {
+/* position: absolute; */
+transform: rotate(-5deg);
 /* border: solid; */
-margin-top: 14vw;
-line-height: 1.1;
 }
 
-#me {display: flex; }
-
-button { background: none; outline: none; cursor: pointer;
-font-style: italic;
-border: none;
+#name
+{
+  /* margin-bottom: 1.3vw; */
+padding: 1.3vw;
+  /* width: 100%; text-align: center; */
 }
 
+a {
+  text-decoration: underline; 
+}
 
- #clickarrow {
-   padding-left: 20px;
-   text-decoration: none;
-   animation: arrow-click 1s infinite;
-   }
+/* MEDIA SPECIFIC */
+#text {
+  position: absolute;
+  top: 1.3vw; left: 0;
+  /* width: 40%; */
+  white-space: pre;
+  padding: 1.3vw;
+}
 
-   @keyframes arrow-click {
-     0% {
-           margin-left: 0px;
-     }
-     50% {
-           margin-left: 10px;
-          }
-     100% {margin-left: 0px}
-   }
-
-/* .paragraph, .p1 {
-  margin-bottom: 0.2em;
-} */
-
-
-.hidden {display: none}
+/* text */
+body {
+  font-size: 1.3vw;
+}

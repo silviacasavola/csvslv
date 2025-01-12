@@ -1,0 +1,68 @@
+:root {
+/* MARGINS */
+  --margin: 3vw;
+  --bottom-margin: 3vw;
+
+  --font-size: 5vw;
+}
+
+/* GLOBAL */
+html {
+  font-size: var(--font-size);
+}
+
+main {width: 100%; }
+
+header {
+background-color: white;
+width: 100vw;
+}
+
+.contact_link {
+  padding-left: calc(var(--margin)*1.5)}
+
+/* header a {text-transform: uppercase;} */
+
+a {font-style: italic;}
+a, a:visited {color: black}
+a:focus, a:active {color: blue}
+
+#text, button, #clickarrow {
+  /* font-size: 1.4rem; */
+  padding: var(--margin);}
+
+#text {
+/* border: solid; */
+/* margin-top: 14vw; */
+line-height: 1.1;
+margin-top: calc(var(--font-size) + var(--margin)*2);
+width: 90%;
+}
+
+#me {display: flex; }
+
+button { background: none; outline: none; cursor: pointer;
+font-style: italic;
+border: none;
+ color: blue;}
+
+
+ #clickarrow {
+   padding-left: 20px;
+   text-decoration: none;
+   animation: arrow-click 1s infinite;
+   }
+
+   @keyframes arrow-click {
+     0% {
+           margin-left: 0px;
+     }
+     50% {
+           margin-left: 10px;
+          }
+     100% {margin-left: 0px}
+   }
+
+.paragraph, .p1 {
+  margin-bottom: 0.2rem;
+}
