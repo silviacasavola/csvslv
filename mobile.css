@@ -1,17 +1,33 @@
-#name
-{
-padding: 3vw;
+#name {
+  padding: var(--page-margin) 0 0 var(--page-margin);
 }
 
 #text {
-  position: absolute;
-  top: 3vw; left: 0;
+  top: calc(var(--page-margin) + var(--text-tilt-top));
+  left: var(--page-margin);
+  padding: 0;
+  max-width: calc(100% - 2 * var(--page-margin));
+}
+
+#text .text-line {
   white-space: normal;
-  padding: 3vw;
-  max-width: 100%;
 }
 
 /* text */
 body {
   font-size: 4vw;
+}
+
+#collage {
+  left: var(--page-margin);
+  right: var(--page-margin);
+}
+
+:root {
+  --page-margin: 2vw;
+  --text-tilt-top: calc(tan(5deg) * 88vw);
+}
+
+#project-description {
+  max-width: 88vw;
 }
