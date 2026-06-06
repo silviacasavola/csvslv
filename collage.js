@@ -747,6 +747,8 @@
       '<div class="project-desc' + (isLong ? ' is-long' : '') + '">' + item.description + '</div>' +
       '<div class="project-meta">' + metaParts.join('<br>') + '<br><a class="back-link" href="index.html">Back to projects overview. ⮐</a></div>';
     descriptionEl.setAttribute('aria-hidden', 'false');
+    var descLinks = descriptionEl.querySelectorAll('a:not(.back-link)');
+    for (var l = 0; l < descLinks.length; l++) descLinks[l].target = '_blank';
     document.body.classList.add('gallery-focus');
     document.title = item.name + ' — csvslv';
     showFocusExtras(item);
