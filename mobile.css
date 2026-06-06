@@ -161,3 +161,7 @@ body.gallery-focus .gallery-item.is-active {
 .gallery-label {
   display: none
 }
+
+.back-link {
+  display: inline;
+}
