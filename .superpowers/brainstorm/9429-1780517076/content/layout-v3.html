@@ -1,0 +1,106 @@
+<h2>Corrected layout — proper aspect ratios + gaps</h2>
+<p class="subtitle">
+  Items 1, 4, 6 are <strong>vertical (3:4)</strong>. Items 2, 3, 5 are <strong>horizontal (4:3)</strong>.
+  Max-height from CSS makes vertical items roughly square at typical laptop screens; horizontals are distinctly wide.
+</p>
+
+<div style="margin: 1.5rem 0;">
+  <!--
+    600×340 SVG → collage inner 588×328 (6px margin each side)
+    cellX=49, cellY=36.4, gapPx=6.6
+
+    JS size = min(3.45*49-6.6, 3.45*36.4-6.6) = min(162, 119) = 119px (width)
+    max-height = 3.45/9 * 328 = 125.7px
+
+    Vertical (3/4): JS sets w=119, aspect-ratio wants h=159 but max-height=126 → w=119, h=126
+    Horizontal (4/3): JS sets w=119, h=119*3/4=89 (under max-height) → w=119, h=89
+
+    gap offset from edges: 3.3px
+
+    Item 1 (vertical 1,4,6 → sj, Human_Face, Student):
+      col=1 left, row=6 top → left=0*49+3=3, top=5*36.4+3=185 → x:3-122, y:185-311
+
+    Item 2 (horizontal 2,3,5 → FFFF, Venetie, Ultrafast):
+      col=5 RIGHT, row=3 top → right edge at (12-5)*49=343 from right → 588-343=245, left=245-119=126
+      top=(3-1)*36.4+3=76 → x:126-245, y:76-165
+
+    Item 3 (horizontal):
+      col=5 left, BOTTOM pin → left=4*49+3=199, bottom=328, top=328-89=239 → x:199-318, y:239-328
+
+    Item 4 (vertical):
+      col=7 left, row=2 top → left=6*49+3=297, top=1*36.4+3=40 → x:297-416, y:40-166
+
+    Item 5 (horizontal):
+      col=12 RIGHT, row=2 top → right=0 → left=588-119-3=466, top=40 → x:466-585, y:40-129
+
+    Item 6 (vertical):
+      col=9 left, row=6 top → left=8*49+3=395, top=5*36.4+3=185 → x:395-514, y:185-311
+  -->
+  <svg viewBox="0 0 600 340" width="100%" style="max-width:720px;border:1px solid #ddd;border-radius:6px;background:#f9f9f9;display:block;margin:0 auto;">
+    <!-- grid lines -->
+    <g stroke="#e2e2e2" stroke-width="0.5">
+      <line x1="6"   y1="6" x2="6"   y2="334"/>
+      <line x1="55"  y1="6" x2="55"  y2="334"/>
+      <line x1="104" y1="6" x2="104" y2="334"/>
+      <line x1="153" y1="6" x2="153" y2="334"/>
+      <line x1="202" y1="6" x2="202" y2="334"/>
+      <line x1="251" y1="6" x2="251" y2="334"/>
+      <line x1="300" y1="6" x2="300" y2="334"/>
+      <line x1="349" y1="6" x2="349" y2="334"/>
+      <line x1="398" y1="6" x2="398" y2="334"/>
+      <line x1="447" y1="6" x2="447" y2="334"/>
+      <line x1="496" y1="6" x2="496" y2="334"/>
+      <line x1="545" y1="6" x2="545" y2="334"/>
+      <line x1="594" y1="6" x2="594" y2="334"/>
+      <line x1="6" y1="6"   x2="594" y2="6"/>
+      <line x1="6" y1="42"  x2="594" y2="42"/>
+      <line x1="6" y1="79"  x2="594" y2="79"/>
+      <line x1="6" y1="115" x2="594" y2="115"/>
+      <line x1="6" y1="152" x2="594" y2="152"/>
+      <line x1="6" y1="188" x2="594" y2="188"/>
+      <line x1="6" y1="224" x2="594" y2="224"/>
+      <line x1="6" y1="261" x2="594" y2="261"/>
+      <line x1="6" y1="297" x2="594" y2="297"/>
+      <line x1="6" y1="334" x2="594" y2="334"/>
+    </g>
+
+    <!-- intro text zone (approx rows 0-3, cols 0-3) -->
+    <rect x="6" y="6" width="147" height="109" fill="#e8e8e8" opacity="0.4" rx="2"/>
+    <text x="12" y="20" font-size="8" fill="#aaa" font-family="sans-serif">intro text</text>
+
+    <!-- Item 1 (vertical 119×126, SJ): x:3-122, y:185-311 -->
+    <rect x="9" y="188" width="119" height="126" fill="#7bafd4" rx="3" opacity="0.85"/>
+    <text x="68" y="255" text-anchor="middle" font-size="9" fill="white" font-family="sans-serif" font-weight="bold">1 vert</text>
+
+    <!-- Item 2 (horizontal 119×89, FFFF): x:126-245, y:76-165 -->
+    <rect x="129" y="79" width="119" height="89" fill="#7bafd4" rx="3" opacity="0.85"/>
+    <text x="188" y="128" text-anchor="middle" font-size="9" fill="white" font-family="sans-serif" font-weight="bold">2 horiz</text>
+
+    <!-- Item 3 (horizontal 119×89, Venetie): x:199-318, y:239-328 -->
+    <rect x="202" y="242" width="119" height="89" fill="#7bafd4" rx="3" opacity="0.85"/>
+    <text x="261" y="291" text-anchor="middle" font-size="9" fill="white" font-family="sans-serif" font-weight="bold">3 horiz</text>
+
+    <!-- Item 4 (vertical 119×126, Human_Face): x:297-416, y:40-166 -->
+    <rect x="300" y="42" width="119" height="126" fill="#7bafd4" rx="3" opacity="0.85"/>
+    <text x="359" y="109" text-anchor="middle" font-size="9" fill="white" font-family="sans-serif" font-weight="bold">4 vert</text>
+
+    <!-- Item 5 (horizontal 119×89, Ultrafast): x:466-585, y:40-129 -->
+    <rect x="469" y="42" width="119" height="89" fill="#7bafd4" rx="3" opacity="0.85"/>
+    <text x="528" y="91" text-anchor="middle" font-size="9" fill="white" font-family="sans-serif" font-weight="bold">5 horiz</text>
+
+    <!-- Item 6 (vertical 119×126, Student): x:395-514, y:185-311 -->
+    <rect x="398" y="188" width="119" height="126" fill="#7bafd4" rx="3" opacity="0.85"/>
+    <text x="457" y="255" text-anchor="middle" font-size="9" fill="white" font-family="sans-serif" font-weight="bold">6 vert</text>
+  </svg>
+</div>
+
+<div class="section" style="font-size:0.875rem;color:#555;">
+  <strong>Balance observations:</strong>
+  <ul style="margin:0.5rem 0 0 1.2rem;line-height:1.9;">
+    <li>Top-left (intro text zone) + adjacent area is very empty</li>
+    <li>Items 4 and 5 both sit at the top but are well spread (no overlap)</li>
+    <li>Items 5 and 6 are close and stacked vertically on the right</li>
+    <li>Item 3 is pushed far to the bottom-centre — isolated</li>
+    <li>The left column has only item 1, sitting low — nothing balances it up top</li>
+  </ul>
+</div>

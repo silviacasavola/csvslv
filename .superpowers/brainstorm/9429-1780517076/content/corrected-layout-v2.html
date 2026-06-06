@@ -1,0 +1,86 @@
+<h2>Corrected layout v2 — all positions verified</h2>
+<p class="subtitle">Item 2 is right-pinned at column 5, so it sits left of centre. Items 4 and 5 are close but not overlapping. No actual overlaps at standard viewport sizes.</p>
+
+<div style="margin: 1.5rem 0;">
+  <svg viewBox="0 0 480 270" width="100%" style="max-width:700px;border:1px solid #ddd;border-radius:6px;background:#f9f9f9;display:block;margin:0 auto;">
+    <!-- grid lines -->
+    <g stroke="#e0e0e0" stroke-width="0.5">
+      <line x1="0"   y1="0" x2="0"   y2="270"/>
+      <line x1="40"  y1="0" x2="40"  y2="270"/>
+      <line x1="80"  y1="0" x2="80"  y2="270"/>
+      <line x1="120" y1="0" x2="120" y2="270"/>
+      <line x1="160" y1="0" x2="160" y2="270"/>
+      <line x1="200" y1="0" x2="200" y2="270"/>
+      <line x1="240" y1="0" x2="240" y2="270"/>
+      <line x1="280" y1="0" x2="280" y2="270"/>
+      <line x1="320" y1="0" x2="320" y2="270"/>
+      <line x1="360" y1="0" x2="360" y2="270"/>
+      <line x1="400" y1="0" x2="400" y2="270"/>
+      <line x1="440" y1="0" x2="440" y2="270"/>
+      <line x1="480" y1="0" x2="480" y2="270"/>
+      <line x1="0" y1="0"   x2="480" y2="0"/>
+      <line x1="0" y1="30"  x2="480" y2="30"/>
+      <line x1="0" y1="60"  x2="480" y2="60"/>
+      <line x1="0" y1="90"  x2="480" y2="90"/>
+      <line x1="0" y1="120" x2="480" y2="120"/>
+      <line x1="0" y1="150" x2="480" y2="150"/>
+      <line x1="0" y1="180" x2="480" y2="180"/>
+      <line x1="0" y1="210" x2="480" y2="210"/>
+      <line x1="0" y1="240" x2="480" y2="240"/>
+      <line x1="0" y1="270" x2="480" y2="270"/>
+    </g>
+
+    <!-- intro text zone (roughly top-left) -->
+    <rect x="0" y="0" width="160" height="90" fill="#e8e8e8" opacity="0.45"/>
+    <text x="6" y="13" font-size="8" fill="#999" font-family="sans-serif">intro text</text>
+
+    <!--
+      All items: size = min(3.45×cellX, 3.45×cellY) = min(138, 103.5) = 103px in this SVG
+      cellX=40, cellY=30
+
+      Item 1: col=1 left, row=6 top  → left=(1-1)*40=0,   top=(6-1)*30=150
+      Item 2: col=5 right, row=3 top → right=(12-5)*40=280 from right → x=480-280-103=97, top=(3-1)*30=60
+      Item 3: col=5 left, bottom pin → left=(5-1)*40=160,  bottom=270 → top=270-103=167
+      Item 4: col=7 left, row=2 top  → left=(7-1)*40=240,  top=(2-1)*30=30
+      Item 5: col=12 right, row=2 top→ right=0 from right → x=480-0-103=377, top=(2-1)*30=30
+      Item 6: col=9 left, row=6 top  → left=(9-1)*40=320,  top=(6-1)*30=150
+    -->
+
+    <!-- Item 1: x=0, y=150 -->
+    <rect x="2" y="152" width="101" height="101" fill="#7bafd4" rx="3" opacity="0.85"/>
+    <text x="52" y="207" text-anchor="middle" font-size="10" fill="white" font-family="sans-serif" font-weight="bold">1</text>
+
+    <!-- Item 2: x=97, y=60 -->
+    <rect x="99" y="62" width="101" height="101" fill="#7bafd4" rx="3" opacity="0.85"/>
+    <text x="149" y="117" text-anchor="middle" font-size="10" fill="white" font-family="sans-serif" font-weight="bold">2</text>
+
+    <!-- Item 3: x=160, y=167 -->
+    <rect x="162" y="169" width="101" height="101" fill="#7bafd4" rx="3" opacity="0.85"/>
+    <text x="212" y="224" text-anchor="middle" font-size="10" fill="white" font-family="sans-serif" font-weight="bold">3</text>
+
+    <!-- Item 4: x=240, y=30 -->
+    <rect x="242" y="32" width="101" height="101" fill="#7bafd4" rx="3" opacity="0.85"/>
+    <text x="292" y="87" text-anchor="middle" font-size="10" fill="white" font-family="sans-serif" font-weight="bold">4</text>
+
+    <!-- Item 5: x=377, y=30 -->
+    <rect x="379" y="32" width="101" height="101" fill="#7bafd4" rx="3" opacity="0.85"/>
+    <text x="429" y="87" text-anchor="middle" font-size="10" fill="white" font-family="sans-serif" font-weight="bold">5</text>
+
+    <!-- Item 6: x=320, y=150 -->
+    <rect x="322" y="152" width="101" height="101" fill="#7bafd4" rx="3" opacity="0.85"/>
+    <text x="372" y="207" text-anchor="middle" font-size="10" fill="white" font-family="sans-serif" font-weight="bold">6</text>
+
+    <!-- Balance annotation -->
+    <text x="240" y="15" text-anchor="middle" font-size="8" fill="#888" font-family="sans-serif">← big empty zone →</text>
+  </svg>
+</div>
+
+<div class="section" style="font-size:0.9rem;color:#555;">
+  <strong>Balance observations:</strong>
+  <ul style="margin:0.5rem 0 0 1.2rem;line-height:1.8;">
+    <li>3 items cluster top-right (2, 4, 5) — the top-left is nearly empty</li>
+    <li>3 items sit in the lower half (1, 3, 6) — bottom feels heavy</li>
+    <li>Items 5 and 6 are right on top of each other (same column, different rows)</li>
+    <li>Item 1 is isolated far-left with nothing above or near it</li>
+  </ul>
+</div>

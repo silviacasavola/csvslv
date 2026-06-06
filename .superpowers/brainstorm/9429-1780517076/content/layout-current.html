@@ -1,0 +1,67 @@
+<h2>Current layout after changes</h2>
+<p class="subtitle">--size: 2.5, all items shifted lower. Does this feel better, or do you want to nudge further?</p>
+
+<div style="margin: 1.5rem 0;">
+  <!--
+    600×340 SVG, collage inner 588×328, cellX=49, cellY=36.4, gapPx=6.6
+
+    size = min(2.5*49-6.6, 2.5*36.4-6.6) = min(116, 84) = 84px
+    max-height = 2.5/9 * 328 = 91px
+
+    Vertical (3/4):  w=84, h=min(112,91)=91  [items 1,4,6]
+    Horizontal (4/3): w=84, h=63              [items 2,3,5]
+
+    Item 1 (vert): col=1 left, row=7  → x:3, y:221
+    Item 2 (horiz): col=5 right, row=5 → right edge at 245, left=161, y:149
+    Item 3 (horiz): col=5 left, bottom → x:199, top=265
+    Item 4 (vert): col=7 left, row=4  → x:297, y:112
+    Item 5 (horiz): col=12 right, row=4 → left=501, y:112
+    Item 6 (vert): col=9 left, row=7  → x:395, y:221
+  -->
+  <svg viewBox="0 0 600 340" width="100%" style="max-width:720px;border:1px solid #ddd;border-radius:6px;background:#f9f9f9;display:block;margin:0 auto;">
+    <g stroke="#e2e2e2" stroke-width="0.5">
+      <line x1="6"   y1="6" x2="6"   y2="334"/><line x1="55"  y1="6" x2="55"  y2="334"/>
+      <line x1="104" y1="6" x2="104" y2="334"/><line x1="153" y1="6" x2="153" y2="334"/>
+      <line x1="202" y1="6" x2="202" y2="334"/><line x1="251" y1="6" x2="251" y2="334"/>
+      <line x1="300" y1="6" x2="300" y2="334"/><line x1="349" y1="6" x2="349" y2="334"/>
+      <line x1="398" y1="6" x2="398" y2="334"/><line x1="447" y1="6" x2="447" y2="334"/>
+      <line x1="496" y1="6" x2="496" y2="334"/><line x1="545" y1="6" x2="545" y2="334"/>
+      <line x1="594" y1="6" x2="594" y2="334"/>
+      <line x1="6" y1="6"   x2="594" y2="6"/>  <line x1="6" y1="42"  x2="594" y2="42"/>
+      <line x1="6" y1="79"  x2="594" y2="79"/>  <line x1="6" y1="115" x2="594" y2="115"/>
+      <line x1="6" y1="152" x2="594" y2="152"/> <line x1="6" y1="188" x2="594" y2="188"/>
+      <line x1="6" y1="224" x2="594" y2="224"/> <line x1="6" y1="261" x2="594" y2="261"/>
+      <line x1="6" y1="297" x2="594" y2="297"/> <line x1="6" y1="334" x2="594" y2="334"/>
+    </g>
+
+    <!-- intro text zone -->
+    <rect x="6" y="6" width="147" height="109" fill="#e8e8e8" opacity="0.4" rx="2"/>
+    <text x="12" y="20" font-size="8" fill="#aaa" font-family="sans-serif">intro text</text>
+
+    <!-- Item 1 (vertical 84×91, SJ): x:3, y:221 -->
+    <rect x="6"   y="224" width="84" height="91" fill="#7bafd4" rx="3" opacity="0.85"/>
+    <text x="48"  y="274" text-anchor="middle" font-size="9" fill="white" font-family="sans-serif" font-weight="bold">1</text>
+
+    <!-- Item 2 (horizontal 84×63, FFFF): left=161, y:149 -->
+    <rect x="164" y="152" width="84" height="63" fill="#7bafd4" rx="3" opacity="0.85"/>
+    <text x="206" y="188" text-anchor="middle" font-size="9" fill="white" font-family="sans-serif" font-weight="bold">2</text>
+
+    <!-- Item 3 (horizontal 84×63, Venetie): x:199, top=265 -->
+    <rect x="202" y="268" width="84" height="63" fill="#7bafd4" rx="3" opacity="0.85"/>
+    <text x="244" y="304" text-anchor="middle" font-size="9" fill="white" font-family="sans-serif" font-weight="bold">3</text>
+
+    <!-- Item 4 (vertical 84×91, Human_Face): x:297, y:112 -->
+    <rect x="300" y="115" width="84" height="91" fill="#7bafd4" rx="3" opacity="0.85"/>
+    <text x="342" y="165" text-anchor="middle" font-size="9" fill="white" font-family="sans-serif" font-weight="bold">4</text>
+
+    <!-- Item 5 (horizontal 84×63, Ultrafast): left=501, y:112 -->
+    <rect x="504" y="115" width="84" height="63" fill="#7bafd4" rx="3" opacity="0.85"/>
+    <text x="546" y="151" text-anchor="middle" font-size="9" fill="white" font-family="sans-serif" font-weight="bold">5</text>
+
+    <!-- Item 6 (vertical 84×91, Student): x:395, y:221 -->
+    <rect x="398" y="224" width="84" height="91" fill="#7bafd4" rx="3" opacity="0.85"/>
+    <text x="440" y="274" text-anchor="middle" font-size="9" fill="white" font-family="sans-serif" font-weight="bold">6</text>
+  </svg>
+</div>
+
+<p style="font-size:0.875rem;color:#666;">Does this feel right? Too low, not low enough, or do you want to rebalance individual items?</p>

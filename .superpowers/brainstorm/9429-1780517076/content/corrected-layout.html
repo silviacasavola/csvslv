@@ -1,0 +1,72 @@
+<h2>Corrected layout — actual CSS positions</h2>
+<p class="subtitle">Items are sized at 3.45 grid units. Items 4 and 5 share the same top row and slightly overlap — that's the real overlap in the current layout.</p>
+
+<div style="margin: 1.5rem 0;">
+  <svg viewBox="0 0 480 270" width="100%" style="max-width:700px;border:1px solid #ddd;border-radius:6px;background:#f9f9f9;display:block;margin:0 auto;">
+    <!-- grid lines -->
+    <g stroke="#e0e0e0" stroke-width="0.5">
+      <line x1="0"   y1="0" x2="0"   y2="270"/>
+      <line x1="40"  y1="0" x2="40"  y2="270"/>
+      <line x1="80"  y1="0" x2="80"  y2="270"/>
+      <line x1="120" y1="0" x2="120" y2="270"/>
+      <line x1="160" y1="0" x2="160" y2="270"/>
+      <line x1="200" y1="0" x2="200" y2="270"/>
+      <line x1="240" y1="0" x2="240" y2="270"/>
+      <line x1="280" y1="0" x2="280" y2="270"/>
+      <line x1="320" y1="0" x2="320" y2="270"/>
+      <line x1="360" y1="0" x2="360" y2="270"/>
+      <line x1="400" y1="0" x2="400" y2="270"/>
+      <line x1="440" y1="0" x2="440" y2="270"/>
+      <line x1="480" y1="0" x2="480" y2="270"/>
+      <line x1="0" y1="0"   x2="480" y2="0"/>
+      <line x1="0" y1="30"  x2="480" y2="30"/>
+      <line x1="0" y1="60"  x2="480" y2="60"/>
+      <line x1="0" y1="90"  x2="480" y2="90"/>
+      <line x1="0" y1="120" x2="480" y2="120"/>
+      <line x1="0" y1="150" x2="480" y2="150"/>
+      <line x1="0" y1="180" x2="480" y2="180"/>
+      <line x1="0" y1="210" x2="480" y2="210"/>
+      <line x1="0" y1="240" x2="480" y2="240"/>
+      <line x1="0" y1="270" x2="480" y2="270"/>
+    </g>
+
+    <!-- intro text zone -->
+    <rect x="0" y="0" width="200" height="120" fill="#e8e8e8" opacity="0.45"/>
+    <text x="8" y="14" font-size="8" fill="#999" font-family="sans-serif">intro text</text>
+
+    <!-- Item 1: col=1 left, row=6 top → left=0, top=150. size=3.45col*40=138, 3.45row*30=103.5 → square=103.5 -->
+    <rect x="2" y="152" width="103" height="103" fill="#7bafd4" rx="3" opacity="0.85"/>
+    <text x="53" y="208" text-anchor="middle" font-size="10" fill="white" font-family="sans-serif" font-weight="bold">1</text>
+
+    <!-- Item 2: col=5 right (right edge at 5*40=200 from right → 480-200=280px right), row=3 top → right=280, top=60. left=280-103=177 -->
+    <rect x="177" y="62" width="103" height="103" fill="#7bafd4" rx="3" opacity="0.85"/>
+    <text x="228" y="118" text-anchor="middle" font-size="10" fill="white" font-family="sans-serif" font-weight="bold">2</text>
+
+    <!-- Item 3: col=5 left, bottom pinned → left=160, bottom=270, top=167 -->
+    <rect x="162" y="167" width="103" height="103" fill="#7bafd4" rx="3" opacity="0.85"/>
+    <text x="213" y="223" text-anchor="middle" font-size="10" fill="white" font-family="sans-serif" font-weight="bold">3</text>
+
+    <!-- Item 4: col=7 left, row=2 top → left=240, top=30 -->
+    <rect x="242" y="32" width="103" height="103" fill="#7bafd4" rx="3" opacity="0.85"/>
+    <text x="293" y="88" text-anchor="middle" font-size="10" fill="white" font-family="sans-serif" font-weight="bold">4</text>
+
+    <!-- Item 5: col=12 right → right=0 → left=480-103=377, row=2 top → top=30 -->
+    <!-- OVERLAP ZONE with item 4 -->
+    <rect x="350" y="4" width="20" height="135" fill="#ff6b6b" opacity="0.25" rx="2"/>
+    <rect x="377" y="32" width="101" height="103" fill="#7bafd4" rx="3" opacity="0.85"/>
+    <text x="427" y="88" text-anchor="middle" font-size="10" fill="white" font-family="sans-serif" font-weight="bold">5</text>
+
+    <!-- Item 6: col=9 left, row=6 top → left=320, top=150 -->
+    <rect x="322" y="152" width="103" height="103" fill="#7bafd4" rx="3" opacity="0.85"/>
+    <text x="373" y="208" text-anchor="middle" font-size="10" fill="white" font-family="sans-serif" font-weight="bold">6</text>
+
+    <!-- overlap label -->
+    <text x="360" y="13" font-size="7.5" fill="#c0392b" font-family="sans-serif" font-weight="bold">4↔5 overlap</text>
+  </svg>
+</div>
+
+<div class="section">
+  <p style="font-size:0.9rem;color:#555;">
+    <strong>Actual overlaps:</strong> Items 4 and 5 are both pinned to row 2 from the top, and their sizes overlap horizontally by ~36px at typical screen widths. Items 2 and 3 share column 5 and sit one above the other (nearly touching). The large empty zone is centre-top (columns 4–8, rows 1–2) — which is where the intro text lives.
+  </p>
+</div>

@@ -1,11 +1,9 @@
 :root {
   --page-bg: #F4F4F4;
-  --page-margin: 0.8vw;
+  --page-margin: 0.75rem;
   --text-tilt: -5deg;
-  /* first line only — each line rotates on its own left edge */
-  --text-tilt-top: calc(tan(5deg) * 42vw);
-  --collage-gap: 10px;
-  --collage-cols: 6;
+  /* compensates vertical overflow from rotated text block (~36rem line length) */
+  --text-tilt-top: calc(tan(5deg) * 32rem);
 }
 
 /* GLOBAL */
@@ -15,7 +13,6 @@ body {
   left: 0;
   margin: 0;
   overflow: hidden;
-  /* font-family: "Arial Narrow"; */
   font-family: "Times New Roman";
   background-color: var(--page-bg);
   color: black;
@@ -28,13 +25,34 @@ a {
   text-decoration: underline;
 }
 
+#intro {
+  position: static;
+}
+
 #name {
   position: relative;
   z-index: 1;
   padding: var(--page-margin) 0 0 var(--page-margin);
 }
 
-#text {
+#name::after {
+  content: '';
+  opacity: 0;
+  transition: opacity 0.45s ease;
+}
+
+body.gallery-focus #name::after {
+  content: '⮐';
+  margin-left: 0.4em;
+  font-size: 0.7em;
+  opacity: 1;
+}
+
+#top-text-mobile {
+  display: none;
+}
+
+#top-text {
   position: absolute;
   top: calc(var(--page-margin) + var(--text-tilt-top));
   left: var(--page-margin);
@@ -42,7 +60,7 @@ a {
   z-index: 1;
 }
 
-#text .text-line {
+#top-text .text-line {
   display: block;
   transform: rotate(var(--text-tilt));
   transform-origin: left top;
@@ -50,93 +68,192 @@ a {
 
 /* text */
 body {
-  font-size: 1.3vw;
+  font-size: .95rem;
 }
 
-#collage {
+#main-container {
   position: fixed;
-  top: 50%;
+  top: clamp(4rem, 12vh, 8rem);
   left: var(--page-margin);
   right: var(--page-margin);
-  transform: translateY(-50%);
-  display: grid;
-  grid-template-columns: repeat(var(--collage-cols), 1fr);
-  grid-template-rows: auto;
-  gap: var(--collage-gap);
+  bottom: var(--page-margin);
+  display: flex;
+  flex-direction: column;
+  gap: var(--page-margin);
   z-index: 0;
-  pointer-events: none;
 }
 
-.collage-item {
+body.gallery-focus #main-container {
+  top: 2.7rem;
+  z-index: 100;
+}
+
+#gallery-projects {
+  flex: 1 1 0;
+  min-height: 0;
+  pointer-events: none;
+  display: grid;
+  grid-template-columns: auto auto 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: var(--page-margin);
+}
+
+.gallery-item {
   position: relative;
-  width: 100%;
-  aspect-ratio: 1 / 1;
   pointer-events: auto;
   cursor: pointer;
-  transition: opacity 0.45s ease, transform 0.45s ease;
+  transition: opacity 0.45s ease;
+}
+
+.gallery-item.is-portrait {
+  flex: 4 4 0;
+  aspect-ratio: 4 / 5;
 }
 
 .focus-extra {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 1 / 1;
+  position: absolute;
   opacity: 0;
   transform: scale(0.88);
-  transition: opacity 0.45s ease, transform 0.45s ease;
+  transition: opacity 0.45s ease, transform 0.45s ease, width 0.35s ease, left 0.35s ease, top 0.35s ease;
 }
 
 .focus-extra.is-visible {
   opacity: 1;
   transform: scale(1);
 }
+body.gallery-focus #gallery-projects {
+  z-index: 1;
+}
 
-.focus-extra .collage-img {
+body.gallery-focus #top-text {opacity:.15}
+
+.focus-extra .gallery-img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: 50% 50%;
 }
 
-body.collage-focus .collage-item:not(.is-active) {
-  opacity: 0;
-  pointer-events: none;
-}
-
-body.collage-focus .collage-item.is-active .collage-label {
-  opacity: 0;
-}
-
-#project-description {
-  position: fixed;
-  left: var(--page-margin);
-  bottom: var(--page-margin);
-  z-index: 2;
-  max-width: 42vw;
+body.gallery-focus .gallery-item:not(.is-active) {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.45s ease;
+}
+
+body.gallery-focus .gallery-item.is-active .gallery-label {
+  opacity: 0;
+}
+
+@media (min-aspect-ratio: 1/1) {
+  body.gallery-focus #gallery-projects {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: unset;
+    grid-auto-rows: auto;
+    align-content: center;
+    overflow: hidden;
+  }
+
+  body.gallery-focus .gallery-item:not(.is-active) {
+    display: none;
+  }
+
+  body.gallery-focus .gallery-item.is-active {
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 5/4;
+    align-self: end;
+    justify-self: stretch;
+    margin: 0;
+  }
+
+
+  body.gallery-focus .focus-extra {
+    position: relative;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 5/4;
+    overflow: hidden;
+    align-self: center;
+    justify-self: stretch;
+  }
+
+  body.gallery-focus .focus-extra.focus-video {
+    aspect-ratio: 16/9;
+  }
+
+  body.gallery-focus .focus-extra .gallery-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    transform: none;
+    object-fit: cover;
+  }
+
+  body.gallery-focus #project-description {
+    overflow-y: auto;
+    align-items: end;
+  }
+}
+
+#project-description {
+  flex: 0 0 auto;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: end;
+  gap: 2rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.45s ease;
+}
+
+.project-desc {
   white-space: pre-wrap;
 }
 
-body.collage-focus #project-description {
+.project-desc.is-long {
+  columns: 2;
+  column-gap: 1.5rem;
+  grid-column: 1 / span 2;
+}
+
+.project-meta {
+  font-size: 0.75rem;
+  white-space: pre-wrap;
+}
+
+.video-container {
+  border: solid;
+  border-width: 1px 0px 1px 0px;
+  aspect-ratio: 16/9;
+}
+
+body.gallery-focus #project-description {
   opacity: 1;
   pointer-events: auto;
 }
 
-.collage-photo {
-  position: relative;
-  width: 100%;
-  height: 100%;
+.gallery-photo {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
 }
 
-.collage-img {
-  display: block;
+
+.gallery-img {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.collage-label {
+.gallery-label {
+  border: solid 2px var(--page-bg);
   position: absolute;
   top: 0;
   left: 0;
@@ -149,8 +266,24 @@ body.collage-focus #project-description {
   line-height: 1.3;
   opacity: 0;
   transition: opacity 0.4s ease;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
 }
 
-.collage-item:hover .collage-label {
+.label-category {
+  color: grey;
+}
+
+.gallery-item:hover .gallery-label {
+  opacity: 1;
+}
+
+.back-link {
+  display: none;
+}
+
+.gallery-item:focus .gallery-label,
+.gallery-item:focus-within .gallery-label {
   opacity: 1;
 }

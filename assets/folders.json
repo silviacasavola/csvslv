@@ -1,8 +1,8 @@
 {
-  "sj": ["sj1.png", "sj2.png"],
+  "sj": ["sj1.png", "sj2.png", "_B8A4554.jpg"],
   "ffff": ["ffff1.jpg", "ffff2.gif", "ffff3.jpg"],
   "Ultrafast": ["ultrafast1.jpg", "ultrafast2.jpg", "ultrafast3.jpg"],
   "Venetie": ["venetie1.JPG", "venetie2.jpg"],
-  "Human_Face": ["humanface3.jpg", "scan1.jpg", "scan2.jpg"],
-  "Student": ["pasta1.jpg", "pasta2.jpg", "pastagif.gif", "pov1.jpg", "pov2.jpg", "pov3.jpg", "pov4.jpg", "pov5.jpg", "pov6.jpg", "retuals.gif", "retuals2.gif", "retuals4.gif", "todsito1.jpg", "todsito2.jpg", "todtesi1.jpg"]
+  "Human_Face": [ "IMG_3204.jpg", "IMG_3197.jpg", "scan1.jpg", "scan2.jpg"],
+  "Student": ["pasta1.jpg", "pasta2.jpg", "pov2.jpg", "pov5.jpg", "retuals4.gif", "retuals2.gif", "todsito1.jpg", "todsito2.jpg"]
 }
