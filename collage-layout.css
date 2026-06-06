@@ -1,0 +1,24 @@
+:root {
+  --image-size: clamp(150px, 275px, 25vw);
+ }
+  @media (min-aspect-ratio: 1/1) {
+  .gallery-item {
+    width: min(var(--image-size), 100%);
+    aspect-ratio: 5 / 4;
+    align-self: center;
+  }
+
+  .gallery-item.is-portrait {
+    width: auto;
+    height: var(--image-size);
+    aspect-ratio: 4 / 5;
+  }
+
+  .gallery-item-1 { grid-column: 1; grid-row: 1 / span 2; margin-top: 4rem; }
+  .gallery-item-2 { grid-column: 2; align-self: end; width: var(--image-size); }
+  .gallery-item-3 { grid-column: 3; grid-row: 1; justify-self: end; }
+  .gallery-item-4 { grid-column: 4; grid-row: 1; justify-self: end; align-self: end;}
+  .gallery-item-5 { grid-column: 3; grid-row: 2; align-self: end; 
+    img {object-position: 50% 20%!important;}}
+  .gallery-item-6 { grid-column: 4; grid-row: 2; align-self: start;}
+}
