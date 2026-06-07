@@ -113,6 +113,7 @@ body.gallery-focus #main-container {
 .focus-extra {
   position: absolute;
   opacity: 0;
+  pointer-events: auto;
   transform: scale(0.88);
   transition: opacity 0.45s ease, transform 0.45s ease, width 0.35s ease, left 0.35s ease, top 0.35s ease;
 }
@@ -133,6 +134,10 @@ body.gallery-focus #top-text {opacity:.15}
   height: 100%;
   object-fit: cover;
   object-position: 50% 50%;
+}
+
+body.gallery-focus .gallery-item {
+  cursor: unset;
 }
 
 body.gallery-focus .gallery-item:not(.is-active) {

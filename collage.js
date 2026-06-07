@@ -833,9 +833,7 @@
     container.appendChild(photo);
     container.appendChild(label);
     container.addEventListener('click', function () {
-      if (activeSlug === item.slug) {
-        exitFocus(true);
-      } else {
+      if (activeSlug !== item.slug) {
         enterFocus(index, true);
       }
     });
