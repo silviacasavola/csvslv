@@ -193,8 +193,8 @@
 <div id="preview"><img id="preview-img" src=""><div id="preview-label"></div></div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.3/p5.min.js"></script>
-<script src="data.js"></script>
-<script src="topics.js"></script>
+<script src="ilpost-prototype/data.js"></script>
+<script src="ilpost-prototype/topics.js"></script>
 <script>
 
 const VPAD = 24;
@@ -203,12 +203,14 @@ function it(t) { return (typeof THEME_IT !== 'undefined' && THEME_IT[t]) || t; }
 
 const ANCHORS = {
   'trump':[229,56,48],'ukraine':[78,148,196],'russia':[78,148,196],
-  'gaza':[240,140,28],'israel':[240,140,28],'climate':[68,185,72],
+  'israel':[240,140,28],'gaza':[220,80,30],'climate':[68,185,72],
   'environment':[68,185,72],'economy':[38,130,132],'inflation':[38,130,132],
   'immigr':[218,88,140],'migr':[218,88,140],'ai ':[148,88,205],
   'artificial':[148,88,205],'election':[235,188,30],'sport':[26,40,88],
   'health':[68,178,118],'pope':[190,152,52],'vatican':[190,152,52],
   'eu rel':[98,162,205],'stock':[215,95,138],
+  'nuclear':[90,210,200],'berlusconi':[170,65,195],'satrapi':[215,105,75],
+  'mondiali':[55,185,85],'minetti':[200,50,100],'chivu':[40,80,200],
 };
 function themeColor(n) {
   const l = n.toLowerCase();
@@ -380,12 +382,13 @@ function computeSegments() {
     byPaper[s.newspaper].topics[s.theme]=(byPaper[s.newspaper].topics[s.theme]||0)+s.area;
     byPaper[s.newspaper].total+=s.area;
   });
-  const papers=Object.values(byPaper), n=papers.length;
+  const papers=Object.values(byPaper);
+  const totalArea=papers.reduce((s,p)=>s+p.total,0);
   const avg={};
   THEMES.forEach(t=>{
-    let sum=0;
-    papers.forEach(p=>{if(p.total>0)sum+=(p.topics[t]||0)/p.total;});
-    avg[t]=sum/n;
+    const areaFraction=totalArea>0?papers.reduce((s,p)=>s+(p.topics[t]||0),0)/totalArea:0;
+    const breadth=papers.filter(p=>(p.topics[t]||0)>0).length;
+    avg[t]=areaFraction+breadth*0.01;
   });
   const total=Object.values(avg).reduce((a,b)=>a+b,0);
   const minPct=showAll?0.001:0.03;
@@ -702,7 +705,7 @@ new p5(function(p) {
   function showPreview(paper,mx,my){
     const filename=paper.filename||(paper.key+'.jpg');
     const subfolder=isIntl(paper.newspaper||paper.key)?'esteri':'italiani';
-    previewImg.src=filename.includes('/')?filename:`images/${subfolder}/${filename}`;
+    previewImg.src=filename.includes('/')?filename:`ilpost-prototype/images/${subfolder}/${filename}`;
     const [fw,fh]=getFormat(paper.newspaper||paper.key);
     preview.style.display='flex';
     const imgW=220, imgH=imgW*(fh/fw);

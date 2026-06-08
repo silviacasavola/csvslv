@@ -1,64 +1,55 @@
 const THEME_IT = {
-  "2024 US elections": "Elezioni USA 2024",
   "AC Milan managerial search": "Ricerca allenatore AC Milan",
   "Algerian opposition Hirak movement": "Movimento Hirak Algeria",
   "Anti-vaccine medical case Italy": "Caso medico no-vax Italia",
   "Bayeux Tapestry UK exhibition": "Arazzo di Bayeux mostra UK",
   "Bolivia political crisis": "Crisi politica Bolivia",
   "Bret Easton Ellis / Literary scandal": "Scandalo letterario Bret Easton Ellis",
-  "Carlo Ancelotti Brazil football": "Carlo Ancelotti Brasile",
+  "Mondiali 2026": "Mondiali 2026",
   "Catalonia teachers strike": "Sciopero insegnanti Catalogna",
   "Catholic Church - Pope digital technocracy opposition": "Papa oppone tecnocrazia digitale",
   "Catholic Church abuse scandal Spain": "Scandalo abusi Chiesa Spagna",
   "Data centers environmental impact": "Impatto ambientale data center",
   "Del Vecchio family holding restructuring": "Ristrutturazione holding famiglia Del Vecchio",
-  "Donald Trump / Republican Party": "Donald Trump Partito Repubblicano",
+  "Trump e il Congresso": "Trump e il Congresso",
   "Dua Lipa wedding": "Matrimonio Dua Lipa",
   "EU cadmium pollution regulation": "Regolamento UE inquinamento cadmio",
-  "EU migration policy": "Politica migratoria UE",
-  "EU temporary protection status for Ukrainian refugees": "Protezione temporanea profughi ucraini UE",
+  "Politica migratoria UE": "Politica migratoria UE",
   "Energy crisis Italy": "Crisi energetica Italia",
   "European Central Bank - counterfeit euro coins": "Monete euro contraffatte BCE",
-  "FIFA World Cup 2026": "Mondiali calcio 2026",
   "Fatherhood / social change": "Paternità e cambiamento sociale",
   "French Socialist Party primary": "Primarie Partito Socialista francese",
   "Gaza conflict": "Conflitto Gaza",
-  "Gaza humanitarian crisis": "Crisi umanitaria Gaza",
+  "Crisi Gaza": "Crisi Gaza",
   "German health insurance system surplus": "Avanzo sistema assicurazione malattia Germania",
   "German long-term care insurance reform": "Riforma assicurazione lungodegenza Germania",
-  "Germany 2026 FIFA World Cup bid": "Candidatura Mondiali 2026 Germania",
   "Global inequality research": "Ricerca disuguaglianza globale",
   "Hungarian government change": "Cambio governo Ungheria",
-  "Hungary EU migration policy opposition": "Ungheria contro politica migratoria UE",
-  "Inter Milan management": "Gestione Inter Milan",
+  "Intervista a Chivu": "Intervista a Chivu",
   "Islamic State women returnees trials": "Processi donne ritornate Stato Islamico",
   "Israel-Lebanon conflict": "Conflitto Israele-Libano",
-  "Israeli-Palestinian conflict": "Conflitto israeliano-palestinese",
-  "Italian education bill - Valditara": "Disegno legge scuola Valditara",
-  "Italian education policy / sex education": "Politica educativa sessuale Italia",
+  "Consenso genitoriale all'educazione affettiva": "Consenso genitoriale all'educazione affettiva",
   "Italian fuel policy": "Politica carburanti Italia",
   "Italian fuel subsidy policy": "Sussidi carburanti Italia",
   "Italian government / Giorgia Meloni": "Governo italiano Giorgia Meloni",
   "Italian healthcare system": "Sistema sanitario italiano",
   "Italian justice - Marcello Dell'Utri mafia case": "Caso mafia Marcello Dell'Utri",
-  "Italian labor exploitation": "Sfruttamento lavoro Italia",
+  "Sfruttamento lavoro Italia": "Sfruttamento lavoro Italia",
   "Italian nuclear energy policy": "Politica nucleare italiana",
   "Italian politics - Giorgia Meloni and magistrates": "Meloni e magistrati Italia",
   "Italian politics - Pina Picierno party switch": "Cambio partito Pina Picierno",
   "Italian right-wing politics June 2 ceremony": "Cerimonia 2 giugno destra italiana",
-  "Italian school parental consent law": "Legge consenso genitoriale scuola",
   "Italian tax evasion enforcement": "Contrasto evasione fiscale Italia",
   "Italian tennis Paris victory": "Vittoria tennis italiana Parigi",
   "Italian youth peace movement": "Movimento pace giovani Italia",
   "Italian youth voter turnout - referendum": "Partecipazione giovani referendum Italia",
   "Italy U17 European Championship": "Campionato europeo U17 Italia",
-  "John Bolton / classified documents": "John Bolton documenti classificati",
+  "Giustizia USA": "Giustizia USA",
   "Juventus summer transfers": "Calciomercato estivo Juventus",
   "Lega party leadership - Salvini and Zaia": "Leadership Lega Salvini e Zaia",
   "Longevity and marriage": "Longevità e matrimonio",
   "Lung cancer prevention": "Prevenzione cancro polmonare",
   "Marjane Satrapi death": "Morte Marjane Satrapi",
-  "Migration and labor exploitation": "Migrazione e sfruttamento lavoro",
   "Missing French student case": "Caso studentessa francese scomparsa",
   "Nicole Minetti pardon - judicial review": "Grazia Nicole Minetti ricorso",
   "Nuclear energy policy": "Politica energia nucleare",
@@ -68,50 +59,48 @@ const THEME_IT = {
   "Reform UK party funding": "Finanziamento partito Reform UK",
   "Renewable energy transition": "Transizione energie rinnovabili",
   "Rome 2025 Athletics World Championships": "Mondiali atletica Roma 2025",
-  "Russia-Ukraine war": "Guerra Russia-Ucraina",
-  "Russia-Ukraine war peace negotiations": "Negoziati pace Russia-Ucraina",
+  "Russia-Ukraine war peace negotiations": "Negoziati Russia-Ucraina",
   "Russian economic forum": "Forum economico russo",
   "Sagrada Familia construction": "Costruzione Sagrada Familia",
   "San Antonio Spurs / NBA Finals": "San Antonio Spurs NBA Finals",
   "Santos Cerdán corruption investigation Spain": "Inchiesta corruzione Santos Cerdán",
   "Silvio Berlusconi investigation": "Inchiesta Silvio Berlusconi",
-  "Simone Inzaghi, Inter manager": "Simone Inzaghi allenatore Inter",
   "SpaceX / Elon Musk": "SpaceX Elon Musk",
   "Teulié school scandal - abuse and blackmail": "Scandalo scuola Teulié abusi ricatti",
-  "Trump Iran policy Republican Congress": "Politica Iran Trump Congresso Repubblicano",
-  "U.S. federal government / lawyer resignations": "Dimissioni avvocati governo USA",
   "UK social care policy": "Politica assistenza sociale UK",
   "UN Security Council election results": "Risultati elezioni Consiglio Sicurezza ONU",
-  "UN peacekeepers Lebanon": "Caschi blu ONU Libano",
   "UniCredit-Commerzbank takeover bid": "Offerta acquisizione UniCredit-Commerzbank",
   "Venezuela humanitarian crisis": "Crisi umanitaria Venezuela"
 };
 const TOPIC_SUMMARY = [
   {
     "theme": "Israel-Lebanon conflict",
-    "total_area": 6532,
+    "total_area": 8615,
     "by_newspaper": {
       "Le Monde": 1800,
       "Domani": 1703,
       "Avvenire": 1210,
+      "Il Sole 24 Ore": 1599,
       "Corriere della Sera": 700,
+      "La Stampa": 484,
       "la Repubblica": 450,
       "il manifesto": 350,
       "il Fatto Quotidiano": 200,
       "The New York Times": 119
     },
-    "count": 8
+    "count": 10
   },
   {
     "theme": "Italian nuclear energy policy",
-    "total_area": 6523,
+    "total_area": 6919,
     "by_newspaper": {
       "il manifesto": 3625,
       "la Repubblica": 1890,
       "Il Sole 24 Ore": 608,
-      "Domani": 400
+      "Domani": 400,
+      "Corriere della Sera": 396
     },
-    "count": 4
+    "count": 5
   },
   {
     "theme": "Marjane Satrapi death",
@@ -129,15 +118,18 @@ const TOPIC_SUMMARY = [
   },
   {
     "theme": "Russia-Ukraine war peace negotiations",
-    "total_area": 4286,
+    "total_area": 6150,
     "by_newspaper": {
       "La Stampa": 2046,
       "Frankfurter Allgemeine": 900,
       "la Repubblica": 540,
       "il Giornale": 500,
-      "il Fatto Quotidiano": 300
+      "il Fatto Quotidiano": 300,
+      "il manifesto": 1050,
+      "Il Sole 24 Ore": 550,
+      "Domani": 264
     },
-    "count": 5
+    "count": 8
   },
   {
     "theme": "Nicole Minetti pardon - judicial review",
@@ -195,22 +187,13 @@ const TOPIC_SUMMARY = [
     "count": 1
   },
   {
-    "theme": "Inter Milan management",
-    "total_area": 2272,
+    "theme": "Intervista a Chivu",
+    "total_area": 2932,
     "by_newspaper": {
-      "La Gazzetta dello Sport": 2272
+      "La Gazzetta dello Sport": 2272,
+      "Corriere della Sera": 660
     },
-    "count": 1
-  },
-  {
-    "theme": "Russia-Ukraine war",
-    "total_area": 1864,
-    "by_newspaper": {
-      "il manifesto": 1050,
-      "Il Sole 24 Ore": 550,
-      "Domani": 264
-    },
-    "count": 3
+    "count": 2
   },
   {
     "theme": "Italian youth peace movement",
@@ -221,20 +204,13 @@ const TOPIC_SUMMARY = [
     "count": 1
   },
   {
-    "theme": "Gaza conflict",
-    "total_area": 1599,
+    "theme": "Politica migratoria UE",
+    "total_area": 2500,
     "by_newspaper": {
-      "Il Sole 24 Ore": 1599
+      "Frankfurter Allgemeine": 1800,
+      "il manifesto": 700
     },
-    "count": 1
-  },
-  {
-    "theme": "EU temporary protection status for Ukrainian refugees",
-    "total_area": 1250,
-    "by_newspaper": {
-      "Frankfurter Allgemeine": 1250
-    },
-    "count": 1
+    "count": 3
   },
   {
     "theme": "Hungarian government change",
@@ -269,13 +245,15 @@ const TOPIC_SUMMARY = [
     "count": 1
   },
   {
-    "theme": "Germany 2026 FIFA World Cup bid",
-    "total_area": 1070,
+    "theme": "Mondiali 2026",
+    "total_area": 1670,
     "by_newspaper": {
       "Corriere della Sera": 770,
-      "Frankfurter Allgemeine": 300
+      "Frankfurter Allgemeine": 300,
+      "Avvenire": 300,
+      "La Gazzetta dello Sport": 300
     },
-    "count": 2
+    "count": 4
   },
   {
     "theme": "UN Security Council election results",
@@ -294,12 +272,14 @@ const TOPIC_SUMMARY = [
     "count": 1
   },
   {
-    "theme": "Trump Iran policy Republican Congress",
-    "total_area": 950,
+    "theme": "Trump e il Congresso",
+    "total_area": 1915,
     "by_newspaper": {
-      "El País": 950
+      "El País": 950,
+      "The New York Times": 650,
+      "Il Sole 24 Ore": 315
     },
-    "count": 1
+    "count": 3
   },
   {
     "theme": "Catalonia teachers strike",
@@ -342,36 +322,32 @@ const TOPIC_SUMMARY = [
     "count": 1
   },
   {
-    "theme": "Italian labor exploitation",
-    "total_area": 700,
+    "theme": "Sfruttamento lavoro Italia",
+    "total_area": 1225,
     "by_newspaper": {
-      "Avvenire": 700
+      "Avvenire": 700,
+      "Corriere della Sera": 525
     },
-    "count": 1
+    "count": 2
   },
   {
-    "theme": "Gaza humanitarian crisis",
-    "total_area": 700,
+    "theme": "Crisi Gaza",
+    "total_area": 1015,
     "by_newspaper": {
-      "il manifesto": 700
+      "il manifesto": 700,
+      "Il Sole 24 Ore": 315
     },
-    "count": 1
+    "count": 2
   },
   {
-    "theme": "EU migration policy",
-    "total_area": 700,
+    "theme": "Consenso genitoriale all'educazione affettiva",
+    "total_area": 1150,
     "by_newspaper": {
-      "il manifesto": 700
+      "la Repubblica": 700,
+      "Avvenire": 250,
+      "il Fatto Quotidiano": 200
     },
-    "count": 1
-  },
-  {
-    "theme": "Italian education policy / sex education",
-    "total_area": 700,
-    "by_newspaper": {
-      "la Repubblica": 700
-    },
-    "count": 1
+    "count": 3
   },
   {
     "theme": "Dua Lipa wedding",
@@ -398,14 +374,6 @@ const TOPIC_SUMMARY = [
     "count": 1
   },
   {
-    "theme": "Simone Inzaghi, Inter manager",
-    "total_area": 660,
-    "by_newspaper": {
-      "Corriere della Sera": 660
-    },
-    "count": 1
-  },
-  {
     "theme": "Anti-vaccine medical case Italy",
     "total_area": 660,
     "by_newspaper": {
@@ -422,14 +390,6 @@ const TOPIC_SUMMARY = [
     "count": 1
   },
   {
-    "theme": "Donald Trump / Republican Party",
-    "total_area": 650,
-    "by_newspaper": {
-      "The New York Times": 650
-    },
-    "count": 1
-  },
-  {
     "theme": "Global inequality research",
     "total_area": 644,
     "by_newspaper": {
@@ -442,22 +402,6 @@ const TOPIC_SUMMARY = [
     "total_area": 600,
     "by_newspaper": {
       "il Fatto Quotidiano": 600
-    },
-    "count": 1
-  },
-  {
-    "theme": "Hungary EU migration policy opposition",
-    "total_area": 550,
-    "by_newspaper": {
-      "Frankfurter Allgemeine": 550
-    },
-    "count": 1
-  },
-  {
-    "theme": "Migration and labor exploitation",
-    "total_area": 525,
-    "by_newspaper": {
-      "Corriere della Sera": 525
     },
     "count": 1
   },
@@ -482,14 +426,6 @@ const TOPIC_SUMMARY = [
     "total_area": 500,
     "by_newspaper": {
       "Le Monde": 500
-    },
-    "count": 1
-  },
-  {
-    "theme": "UN peacekeepers Lebanon",
-    "total_area": 484,
-    "by_newspaper": {
-      "La Stampa": 484
     },
     "count": 1
   },
@@ -550,14 +486,6 @@ const TOPIC_SUMMARY = [
     "count": 1
   },
   {
-    "theme": "Nuclear energy policy",
-    "total_area": 396,
-    "by_newspaper": {
-      "Corriere della Sera": 396
-    },
-    "count": 1
-  },
-  {
     "theme": "Russian economic forum",
     "total_area": 396,
     "by_newspaper": {
@@ -582,12 +510,12 @@ const TOPIC_SUMMARY = [
     "count": 1
   },
   {
-    "theme": "John Bolton / classified documents",
-    "total_area": 360,
+    "theme": "Giustizia USA",
+    "total_area": 479,
     "by_newspaper": {
-      "The New York Times": 360
+      "The New York Times": 479
     },
-    "count": 1
+    "count": 2
   },
   {
     "theme": "Sagrada Familia construction",
@@ -638,31 +566,7 @@ const TOPIC_SUMMARY = [
     "count": 1
   },
   {
-    "theme": "Israeli-Palestinian conflict",
-    "total_area": 315,
-    "by_newspaper": {
-      "Il Sole 24 Ore": 315
-    },
-    "count": 1
-  },
-  {
-    "theme": "2024 US elections",
-    "total_area": 315,
-    "by_newspaper": {
-      "Il Sole 24 Ore": 315
-    },
-    "count": 1
-  },
-  {
     "theme": "Bolivia political crisis",
-    "total_area": 300,
-    "by_newspaper": {
-      "Avvenire": 300
-    },
-    "count": 1
-  },
-  {
-    "theme": "FIFA World Cup 2026",
     "total_area": 300,
     "by_newspaper": {
       "Avvenire": 300
@@ -674,14 +578,6 @@ const TOPIC_SUMMARY = [
     "total_area": 300,
     "by_newspaper": {
       "il Giornale": 300
-    },
-    "count": 1
-  },
-  {
-    "theme": "Carlo Ancelotti Brazil football",
-    "total_area": 300,
-    "by_newspaper": {
-      "La Gazzetta dello Sport": 300
     },
     "count": 1
   },
@@ -698,14 +594,6 @@ const TOPIC_SUMMARY = [
     "total_area": 272,
     "by_newspaper": {
       "Domani": 272
-    },
-    "count": 1
-  },
-  {
-    "theme": "Italian school parental consent law",
-    "total_area": 250,
-    "by_newspaper": {
-      "Avvenire": 250
     },
     "count": 1
   },
@@ -735,14 +623,6 @@ const TOPIC_SUMMARY = [
   },
   {
     "theme": "Italian youth voter turnout - referendum",
-    "total_area": 200,
-    "by_newspaper": {
-      "il Fatto Quotidiano": 200
-    },
-    "count": 1
-  },
-  {
-    "theme": "Italian education bill - Valditara",
     "total_area": 200,
     "by_newspaper": {
       "il Fatto Quotidiano": 200
@@ -790,14 +670,6 @@ const TOPIC_SUMMARY = [
     "count": 1
   },
   {
-    "theme": "U.S. federal government / lawyer resignations",
-    "total_area": 119,
-    "by_newspaper": {
-      "The New York Times": 119
-    },
-    "count": 1
-  },
-  {
     "theme": "Italian fuel policy",
     "total_area": 5,
     "by_newspaper": {
@@ -841,7 +713,7 @@ const ALL_STORIES = [
   },
   {
     "newspaper": "Avvenire",
-    "theme": "Italian labor exploitation",
+    "theme": "Sfruttamento lavoro Italia",
     "title": "SE INVISIBILI SONO I PADRONI",
     "title_en": "If the bosses are invisible",
     "text": "Chissà, forse a risolvere il problema del caporalato ci penserà domani l'Intelligenza artificiale.",
@@ -857,7 +729,7 @@ const ALL_STORIES = [
   },
   {
     "newspaper": "Avvenire",
-    "theme": "FIFA World Cup 2026",
+    "theme": "Mondiali 2026",
     "title": "Il Mondiale in cui i tifosi sono \"clienti\"",
     "title_en": "The World Cup where fans are clients",
     "text": "La prossima settimana inizia il Mondiale di calcio.",
@@ -865,7 +737,7 @@ const ALL_STORIES = [
   },
   {
     "newspaper": "Avvenire",
-    "theme": "Italian school parental consent law",
+    "theme": "Consenso genitoriale all'educazione affettiva",
     "title": "Il consenso delle famiglie è diventato legge",
     "title_en": "Family consent becomes law",
     "text": "Con il via libera definitivo del Senato, ora le medie e superiori dovranno ottenere il consenso delle famiglie.",
@@ -897,7 +769,7 @@ const ALL_STORIES = [
   },
   {
     "newspaper": "Corriere della Sera",
-    "theme": "Nuclear energy policy",
+    "theme": "Italian nuclear energy policy",
     "title": "«Ecco il mio piano per il nucleare»",
     "title_en": "My plan for nuclear energy",
     "text": "Le Regioni, dice il ministro dell'Ambiente Gilberto Pichetto Fratin, «bloccano il nuovo nucleare». Ecco il piano per il nucleare «sicuro». Un referendum?",
@@ -921,7 +793,7 @@ const ALL_STORIES = [
   },
   {
     "newspaper": "Corriere della Sera",
-    "theme": "Migration and labor exploitation",
+    "theme": "Sfruttamento lavoro Italia",
     "title": "Botte, abusi e paghe misere: le vite da incubo dei migranti",
     "title_en": "Beatings, abuse, misery migrants nightmare lives",
     "text": "di Goffredo Buccini",
@@ -945,7 +817,7 @@ const ALL_STORIES = [
   },
   {
     "newspaper": "Corriere della Sera",
-    "theme": "Simone Inzaghi, Inter manager",
+    "theme": "Intervista a Chivu",
     "title": "Chivu: io e il regime, sognavo il prosciutto",
     "title_en": "Chivu: me, the regime, I dreamed ham",
     "text": "L'allenatore dell'Inter racconta: da piccolo avevo poco, per i miei giocatori farei di tutto",
@@ -953,7 +825,7 @@ const ALL_STORIES = [
   },
   {
     "newspaper": "Corriere della Sera",
-    "theme": "Germany 2026 FIFA World Cup bid",
+    "theme": "Mondiali 2026",
     "title": "Il Mondiale e il nostro declino",
     "title_en": "The World Cup and our decline",
     "text": "Sarà un Mondiale straordinario; e questo rende ancora più amaro il fatto che sarà un Mondiale senza l'Italia.",
@@ -1009,7 +881,7 @@ const ALL_STORIES = [
   },
   {
     "newspaper": "Domani",
-    "theme": "Russia-Ukraine war",
+    "theme": "Russia-Ukraine war peace negotiations",
     "title": "Putin fa la colomba sull'Ucraina",
     "title_en": "Putin plays dove on Ukraine",
     "text": "",
@@ -1049,7 +921,7 @@ const ALL_STORIES = [
   },
   {
     "newspaper": "El País",
-    "theme": "Trump Iran policy Republican Congress",
+    "theme": "Trump e il Congresso",
     "title": "Trump pierde apoyo entre los republicanos en el Congreso por la guerra de Irán",
     "title_en": "Trump loses Republican support over Iran war",
     "text": "El presidente de EE.UU, Donald Trump, recibió el miércoles un potente golpe simbólico en la Cámara de Representantes, cuando cuatro republicanos votaron a favor de que se limite su poder para continuar con la guerra.",
@@ -1097,7 +969,7 @@ const ALL_STORIES = [
   },
   {
     "newspaper": "Frankfurter Allgemeine",
-    "theme": "EU temporary protection status for Ukrainian refugees",
+    "theme": "Politica migratoria UE",
     "title": "Ukrainer im wehrfähigen Alter sollen Schutzstatus verlieren",
     "title_en": "Ukrainian men of military age lose protection",
     "text": "Die EU-Kommission treibt eine Änderung des EU-Beschlusses zum vorübergehenden Schutz für Ukrainer voran.",
@@ -1129,7 +1001,7 @@ const ALL_STORIES = [
   },
   {
     "newspaper": "Frankfurter Allgemeine",
-    "theme": "Hungary EU migration policy opposition",
+    "theme": "Politica migratoria UE",
     "title": "Magyar stellt sich gegen EU-Migrationspolitik",
     "title_en": "Hungary opposes EU migration policy",
     "text": "Die neue ungarische Minderheitsregierung hat angekündigt, gegen die Migrationspolitik der EU vorzugehen.",
@@ -1137,7 +1009,7 @@ const ALL_STORIES = [
   },
   {
     "newspaper": "Frankfurter Allgemeine",
-    "theme": "Germany 2026 FIFA World Cup bid",
+    "theme": "Mondiali 2026",
     "title": "DFB-Angriff auf WM 2026",
     "title_en": "Germany bids for World Cup 2026",
     "text": "Der Deutsche Fußballbund hat angekündigt, dass Deutschland sich offiziell als Ausrichter für die WM bewerben wird.",
@@ -1225,7 +1097,7 @@ const ALL_STORIES = [
   },
   {
     "newspaper": "il Fatto Quotidiano",
-    "theme": "Italian education bill - Valditara",
+    "theme": "Consenso genitoriale all'educazione affettiva",
     "title": "EDUCAZIONE AFFETTIVA - Ok ddl Valditara \"L'Italia a livello di Ungheria&C.\"",
     "title_en": "Valditara bill approved, Italy like Hungary",
     "text": "",
@@ -1305,7 +1177,7 @@ const ALL_STORIES = [
   },
   {
     "newspaper": "il manifesto",
-    "theme": "Russia-Ukraine war",
+    "theme": "Russia-Ukraine war peace negotiations",
     "title": "Zelensky a Putin: «Incontriamoci»",
     "title_en": "Zelensky proposes meeting with Putin",
     "text": "Il presidente ucraino Volodymyr Zelensky è passato dalle parole ai fatti, dopo aver dichiarato mercoledì di sentirsi abbandonato dagli Stati uniti e di non voler «stare in fila ad aspettare che risolvano tutti i conflitti del mondo».",
@@ -1321,7 +1193,7 @@ const ALL_STORIES = [
   },
   {
     "newspaper": "il manifesto",
-    "theme": "Gaza humanitarian crisis",
+    "theme": "Crisi Gaza",
     "title": "Gaza: Il professor al Najjar rapito sulla via per l'Italia",
     "title_en": "Gaza professor al Najjar kidnapped en route",
     "text": "Nemmeno l'era della sorveglianza globale, con il cielo saturato di droni e i confini presidiati da cecchini, ha cancellato la possibilità di svanire nel nulla.",
@@ -1329,7 +1201,7 @@ const ALL_STORIES = [
   },
   {
     "newspaper": "il manifesto",
-    "theme": "EU migration policy",
+    "theme": "Politica migratoria UE",
     "title": "Dietrofront: Patto Ue sui migranti arriva il decreto",
     "title_en": "EU migration pact decree arrives Italy",
     "text": "Ennesimo decreto immigrazione: il governo si rimangia la legge delega e va per le vie brevi in vista del Patto Ue.",
@@ -1337,7 +1209,7 @@ const ALL_STORIES = [
   },
   {
     "newspaper": "Il Sole 24 Ore",
-    "theme": "Gaza conflict",
+    "theme": "Israel-Lebanon conflict",
     "title": "Libano, no di Hezbollah alla fragile tregua. Raid Idf su Gaza City: almeno undici vittime",
     "title_en": "Lebanon: Hezbollah rejects truce, IDF raids Gaza",
     "text": "Roberto Bongiorni — a pag. 13",
@@ -1345,7 +1217,7 @@ const ALL_STORIES = [
   },
   {
     "newspaper": "Il Sole 24 Ore",
-    "theme": "Israeli-Palestinian conflict",
+    "theme": "Crisi Gaza",
     "title": "Nella Striscia crisi idrica drammatica",
     "title_en": "Dramatic water crisis in Gaza Strip",
     "text": "Rosalba Reggio — a pag. 13",
@@ -1353,7 +1225,7 @@ const ALL_STORIES = [
   },
   {
     "newspaper": "Il Sole 24 Ore",
-    "theme": "2024 US elections",
+    "theme": "Trump e il Congresso",
     "title": "Il voto contro la guerra: Trump attacca i «cattivi repubblicani»",
     "title_en": "Trump attacks anti-war Republican voters",
     "text": "Marco Valsania — a pag. 14",
@@ -1385,7 +1257,7 @@ const ALL_STORIES = [
   },
   {
     "newspaper": "Il Sole 24 Ore",
-    "theme": "Russia-Ukraine war",
+    "theme": "Russia-Ukraine war peace negotiations",
     "title": "Putin: pronti a soluzione pacifica. Lettera di Zelensky: incontriamoci",
     "title_en": "Putin ready for peace; Zelensky writes: let us meet",
     "text": "Vladimir Putin annuncia che le truppe russe «avanzano», ma Mosca rimane pronta a una soluzione «attraverso mezzi pacifici».",
@@ -1409,7 +1281,7 @@ const ALL_STORIES = [
   },
   {
     "newspaper": "La Gazzetta dello Sport",
-    "theme": "Inter Milan management",
+    "theme": "Intervista a Chivu",
     "title": "LA MIA INTER ha sempre FAME",
     "title_en": "My Inter always hungry for more",
     "text": "«Servono giocatori, Palestra bel profilo La Champions non sia un'ossessione Difenderò i miei fino alla morte Temevano l'esonero, il club mi ha protetto»",
@@ -1441,7 +1313,7 @@ const ALL_STORIES = [
   },
   {
     "newspaper": "La Gazzetta dello Sport",
-    "theme": "Carlo Ancelotti Brazil football",
+    "theme": "Mondiali 2026",
     "title": "MONDIALE -6 Falcao: «Così Ancelotti ha conquistato il Brasile»",
     "title_en": "World Cup minus 6 Ancelotti conquers Brazil",
     "text": "",
@@ -1473,7 +1345,7 @@ const ALL_STORIES = [
   },
   {
     "newspaper": "La Stampa",
-    "theme": "UN peacekeepers Lebanon",
+    "theme": "Israel-Lebanon conflict",
     "title": "IL MEDIO ORIENTE: Casco blu senza vita La palude Libano",
     "title_en": "Dead UN peacekeeper in Lebanon swamp",
     "text": "Gli ingegneri della diplomazia hanno firmato a Washington un ambizioso progetto. Ma le fondamenta, in Libano, poggiano su un terreno minato.",
@@ -1617,7 +1489,7 @@ const ALL_STORIES = [
   },
   {
     "newspaper": "la Repubblica",
-    "theme": "Italian education policy / sex education",
+    "theme": "Consenso genitoriale all'educazione affettiva",
     "title": "Lezioni sul sesso solo con il consenso dei genitori",
     "title_en": "Sex education requires parental consent",
     "text": "Per educare gli studenti e le studentesse alla sessualità e alla affettività servirà da settembre il permesso dei genitori.",
@@ -1681,7 +1553,7 @@ const ALL_STORIES = [
   },
   {
     "newspaper": "The New York Times",
-    "theme": "Donald Trump / Republican Party",
+    "theme": "Trump e il Congresso",
     "title": "G.O.P. Lawmakers Test Trump's Grip on Party",
     "title_en": "GOP Lawmakers Test Trump's Party Control",
     "text": "WASHINGTON — On a tour through Asia last fall, President Trump took a moment on the world stage to celebrate a legislative victory at home.",
@@ -1713,7 +1585,7 @@ const ALL_STORIES = [
   },
   {
     "newspaper": "The New York Times",
-    "theme": "John Bolton / classified documents",
+    "theme": "Giustizia USA",
     "title": "Bolton to Plead To Mishandling Classified Files",
     "title_en": "Bolton Pleads Guilty to Mishandling Classified Files",
     "text": "WASHINGTON — John R. Bolton, a national security adviser to President Trump in his first term, has reached a tentative deal with prosecutors to plead guilty to mishandling classified information.",
@@ -1737,7 +1609,7 @@ const ALL_STORIES = [
   },
   {
     "newspaper": "The New York Times",
-    "theme": "U.S. federal government / lawyer resignations",
+    "theme": "Giustizia USA",
     "title": "Government Lawyers Quit",
     "title_en": "Federal Government Lawyers Resign",
     "text": "The departure of more than 10,000 federal lawyers has left some agencies without enough staff and has boosted the ranks of advocacy groups.",
