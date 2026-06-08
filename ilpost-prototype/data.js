@@ -153,7 +153,7 @@ const NEWSPAPER_DATA = {
         "title_en": "Rado Switzerland watches advertisement"
       }
     ],
-    "filename": "images/esteri/le-monde.webp"
+    "filename": "ilpost-prototype/images/esteri/le-monde.webp"
   },
   "the-new-york-times": {
     "newspaper": "The New York Times",
@@ -305,7 +305,7 @@ const NEWSPAPER_DATA = {
         "title_en": "Death of a Salesman Broadway Advertisement"
       }
     ],
-    "filename": "images/esteri/the-new-york-times.webp"
+    "filename": "ilpost-prototype/images/esteri/the-new-york-times.webp"
   },
   "el-pais": {
     "newspaper": "El País",
@@ -418,7 +418,7 @@ const NEWSPAPER_DATA = {
         "title_en": "Casa Guillermo antiques — we buy at best price"
       }
     ],
-    "filename": "images/esteri/el-pais.jpg"
+    "filename": "ilpost-prototype/images/esteri/el-pais.jpg"
   },
   "frankfurter-allgemeine-zeitung": {
     "newspaper": "Frankfurter Allgemeine",
@@ -572,7 +572,7 @@ const NEWSPAPER_DATA = {
         "text": "BERLIN. Die neue ungarische Minderheitsregierung hat angekündigt, gegen die Migrationspolitik der EU vorzugehen."
       }
     ],
-    "filename": "images/esteri/frankfurter-allgemeine-zeitung.jpg"
+    "filename": "ilpost-prototype/images/esteri/frankfurter-allgemeine-zeitung.jpg"
   },
   "avvenire": {
     "newspaper": "Avvenire",
@@ -734,7 +734,7 @@ const NEWSPAPER_DATA = {
         "title_en": "Infinite Places - The forms of bread supplement ad"
       }
     ],
-    "filename": "images/italiani/avvenire.jpg"
+    "filename": "ilpost-prototype/images/italiani/avvenire.jpg"
   },
   "corriere-della-sera": {
     "newspaper": "Corriere della Sera",
@@ -897,7 +897,7 @@ const NEWSPAPER_DATA = {
         "title_en": "Centenarian couple Pompilia and Luigi portrait"
       }
     ],
-    "filename": "images/italiani/corriere-della-sera.jpg"
+    "filename": "ilpost-prototype/images/italiani/corriere-della-sera.jpg"
   },
   "il-fatto-quotidiano": {
     "newspaper": "il Fatto Quotidiano",
@@ -1062,7 +1062,7 @@ const NEWSPAPER_DATA = {
         "text": "Nelle rare telefonate li chiamavano i \"biscotti\", le \"merci\", i \"pezzi\", le \"cose\"."
       }
     ],
-    "filename": "images/italiani/il-fatto-quotidiano.jpg"
+    "filename": "ilpost-prototype/images/italiani/il-fatto-quotidiano.jpg"
   },
   "il-giornale": {
     "newspaper": "il Giornale",
@@ -1244,7 +1244,7 @@ const NEWSPAPER_DATA = {
         "title_en": "La Cascina Consortium advertisement"
       }
     ],
-    "filename": "images/italiani/il-giornale.jpg"
+    "filename": "ilpost-prototype/images/italiani/il-giornale.jpg"
   },
   "il-manifesto": {
     "newspaper": "il manifesto",
@@ -1377,7 +1377,7 @@ const NEWSPAPER_DATA = {
         "text": "Dopo le nuove indagini della procura generale di Milano, che hanno smentito l'inchiesta del Fatto, Mattarella conferma la grazia a Minetti."
       }
     ],
-    "filename": "images/italiani/il-manifesto.jpg"
+    "filename": "ilpost-prototype/images/italiani/il-manifesto.jpg"
   },
   "il-sole-24-ore": {
     "newspaper": "Il Sole 24 Ore",
@@ -1537,7 +1537,7 @@ const NEWSPAPER_DATA = {
         "text": "Domani in esclusiva con Il Sole 24 Ore"
       }
     ],
-    "filename": "images/italiani/il-sole-24-ore.jpg"
+    "filename": "ilpost-prototype/images/italiani/il-sole-24-ore.jpg"
   },
   "la-gazzetta-dello-sport": {
     "newspaper": "La Gazzetta dello Sport",
@@ -1686,7 +1686,7 @@ const NEWSPAPER_DATA = {
         "title_en": "Tomorrow free Serie A calendar gift"
       }
     ],
-    "filename": "images/italiani/la-gazzetta-dello-sport.jpg"
+    "filename": "ilpost-prototype/images/italiani/la-gazzetta-dello-sport.jpg"
   },
   "la-stampa": {
     "newspaper": "La Stampa",
@@ -1859,7 +1859,7 @@ const NEWSPAPER_DATA = {
         "title_en": "We buy oriental and European antiques"
       }
     ],
-    "filename": "images/italiani/la-stampa.jpg"
+    "filename": "ilpost-prototype/images/italiani/la-stampa.jpg"
   },
   "repubblica": {
     "newspaper": "la Repubblica",
@@ -2010,7 +2010,7 @@ const NEWSPAPER_DATA = {
         "text": "Ho contribuito in questi anni a rendere nota la formula con la quale Jacques Lacan aveva definito una delle cifre fondamentali del nostro tempo, ovvero quella dell'\"evaporazione del padre\"."
       }
     ],
-    "filename": "images/italiani/repubblica.jpg"
+    "filename": "ilpost-prototype/images/italiani/repubblica.jpg"
   },
   "the-guardian": {
     "newspaper": "The Guardian",
@@ -2123,7 +2123,7 @@ const NEWSPAPER_DATA = {
         "text": "Nigel Farage's party has brought in £9m in three months, largely from crypto billionaires"
       }
     ],
-    "filename": "images/esteri/the-guardian.jpeg"
+    "filename": "ilpost-prototype/images/esteri/the-guardian.jpeg"
   },
   "domani": {
     "newspaper": "Domani",
@@ -2240,6 +2240,6 @@ const NEWSPAPER_DATA = {
         "title_en": "Mariane Satrapi, the unsubmissive"
       }
     ],
-    "filename": "images/italiani/domani.jpeg"
+    "filename": "ilpost-prototype/images/italiani/domani.jpeg"
   }
 };
